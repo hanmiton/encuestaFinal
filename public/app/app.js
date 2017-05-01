@@ -117,6 +117,205 @@ angular.module('pollApp',['appRoutes'])
     ]
    };  
 
+    //pregunta 30
+   $scope.celebraciones = {
+    opciones: [
+      {id: '1', name: 'Pawkar Raymi (21 de marzo)'},
+      {id: '2', name: 'Inti Raymi (21 de junio)'},
+      {id: '3', name: 'Kuya Raymi (21de septiembre)'},
+      {id: '4', name: 'Kapac Raymi (21 de diciembre)'},
+      {id: '5', name: 'San Pedro (29 de junio)'},
+      {id: '6', name: 'Octavas de Juan Montalvo'}   
+    ]
+   };
+
+    //pregunta 31
+   $scope.medicinas = {
+    opciones: [
+      {id: '1', name: 'Medicina ancestral'},
+      {id: '2', name: 'Medicina occidental'}   
+    ]
+   };
+
+    //pregunta 37
+   $scope.materiales = {
+    opciones: [
+      {id: '1', name: 'Utensillos de piedra'},
+      {id: '2', name: 'Cerámica'},
+      {id: '3', name: 'Madera'},
+      {id: '4', name: 'Metal'},
+      {id: '5', name: 'Textil'},
+          
+    ]
+   };
+//pregunta 38
+   $scope.res38 = {
+    opciones: [
+      {id: '1', name: 'Usted encontró'},
+      {id: '2', name: 'Obtuvo de regalo'},
+      {id: '3', name: 'Compró'}   
+    ]
+   };
+
+//pregunta 39
+   $scope.lugares = {
+    opciones: [
+      {id: '1', name: 'Cayambe'},
+      {id: '2', name: 'Ayora'},
+      {id: '3', name: 'Cangahua'},
+      {id: '4', name: 'Olmedo'},
+      {id: '5', name: 'Cuzubamba'},
+      {id: '6', name: 'Otón'},        
+      {id: '7', name: 'Cantón Pedro Moncayo'},
+      {id: '8', name: 'Cantón Quito'},
+      {id: '9', name: 'Cantón Otavalo'},
+      {id: '10', name: 'No sabe'}
+    ]
+   };
+  //pregunta 40
+    $scope.res40 = {
+    opciones: [
+      {id: '1', name: 'Vitrina con vidrio'},
+      {id: '2', name: 'Guardada en un mueble cerrado'},
+      {id: '3', name: 'Exhibición en estantería abierta'},
+      {id: '4', name: 'Cajas- todas juntas cubiertas de papel o tela'},
+      {id: '5', name: 'Cajas - todas juntas no cubiertas'}
+    ]
+   };
+//pregunta 45 
+    $scope.objetos = {
+    opciones: [
+      {id: '1', name: 'Dibujos'},
+      {id: '2', name: 'Pinturas'},
+      {id: '3', name: 'Esculturas'},
+      {id: '4', name: 'Monedas'},
+      {id: '5', name: 'Medallas'},
+      {id: '6', name: 'Tallas'},
+      {id: '7', name: 'Objetos de orfebrería'},
+      {id: '8', name: 'Objetos de cerámica'},
+      {id: '9', name: 'Objetos de madera'},
+      {id: '10', name: 'Herramienta agrícola'},
+      {id: '11', name: 'Maquinaria agrícola'},
+      {id: '12', name: 'Herramineta industrial'},
+      {id: '13', name: 'Maquinaria industrial'},
+      {id: '14', name: 'Trapiches'},
+      {id: '15', name: 'Alambiques'},
+      {id: '16', name: 'Relojes'},
+      {id: '17', name: 'Campanarios'},
+      {id: '18', name: 'Telares'},
+      {id: '19', name: 'Mobiliario urbano'}
+
+    ]
+   };
+
+//pregunta 47
+    $scope.documentos = {
+    opciones: [
+      {id: '1', name: 'Manuscritos'},
+      {id: '2', name: 'Libros'},
+      {id: '3', name: 'Mapas'},
+      {id: '4', name: 'Partituras musicales'},
+      {id: '5', name: 'Telegramas'},
+      {id: '6', name: 'Colecciones filatélicas'},
+      {id: '7', name: 'Billetes'}
+    ]
+   };
+
+//pregunta 48
+    $scope.visuales = {
+    opciones: [
+      {id: '1', name: 'Fílmicos'},
+      {id: '2', name: 'Sonoros'},
+      {id: '3', name: 'Visuales'},
+      {id: '4', name: 'Audio visuales'},
+      {id: '5', name: 'Fotografías'},
+      {id: '6', name: 'Negativos'}
+    ]
+   };
+
+//pregunta 49
+    $scope.visuales = {
+    opciones: [
+      {id: '1', name: 'Archivos audiovisuales magnéticos y de interés histórico.'},
+      {id: '2', name: 'Archivos audiovisuales digitales de interés histórico'},
+      {id: '3', name: 'Documentos de interés histórico'},
+      {id: '4', name: 'Documentos de interés científico'},
+      {id: '5', name: 'Documentos de interés artístico'},
+      {id: '6', name: 'Documentos de interés simbólico'},
+      {id: '7', name: 'Documentos de interés para la memoria social'}
+    ]
+   };
+
+
+//pregunta 54
+    $scope.formas = {
+    opciones: [
+      {id: '1', name: 'Forma permanente -museos.'},
+      {id: '2', name: 'Forma ocasional - exposiciones'},
+      {id: '3', name: 'Nunca'}
+    ]
+   };
+
+//pregunta 57
+    $scope.instituciones = {
+    opciones: [
+      {id: '1', name: 'El Gobierno Nacional.'},
+      {id: '2', name: 'El Gobierno Provincia de Pichincha'},
+      {id: '3', name: 'El GAD Municipal de Cayambe'},
+      {id: '4', name: 'La Junta Parroquial'},
+      {id: '5', name: 'Ninguno'},
+      {id: '6', name: 'No sabe'}
+    ]
+   };
+
+//pregunta 58
+    $scope.organizaciones = {
+    opciones: [
+      {id: '1', name: 'Gobierno comunitario'},
+      {id: '2', name: 'Comité barrial'},
+      {id: '3', name: 'Pueblo Cayambe'},
+      {id: '4', name: 'Organización de 2do grado'},
+      {id: '5', name: 'Cas de la Cultura - Extensión Cayambe'},
+      {id: '6', name: 'Ninguno'},
+      {id: '7', name: 'No sabe'} 
+    ]
+   };
+
+//pregunta 59
+    $scope.competencias = {
+    opciones: [
+      {id: '1', name: 'Emitir políticas respecto al patrimonio cultural'},
+      {id: '2', name: 'Planificar el patrimonio cultural'},
+      {id: '3', name: 'Establecer normas respecto al patrimonio'},
+      {id: '4', name: 'Controlar para la preservación del patrimonio'},
+      {id: '5', name: 'Intervenir para conservar, preservar,restaurar, exhibir, investigar y promocionar'},
+      {id: '6', name: 'Promover la restitución y recuperación de los bines expoliados, perdidos o degradados'},
+      {id: '7', name: 'Prestar asistencia técnica para la preservación'},
+       {id: '8 ', name: 'Preservar inmuelbes patrimoniales'},
+       {id: '9', name: 'Administrar los museos, bibliotecas y archivos'},
+       {id: '10', name: 'Administrar sitios arqueológicos'},
+       {id: '11', name: 'Administrar espacios públicos culturales/teatros'}
+    ]
+   };
+
+//pregunta 62
+    $scope.organismos = {
+    opciones: [
+      {id: '1', name: 'Jefatura de Patrimonio'},
+      {id: '2', name: 'Departamento de patrimonio cultural'},
+      {id: '3', name: 'Dirección General de patrimonio cultural'},
+      {id: '4', name: 'Empresa pública de patrimonio cultural'}    ]
+   };
+
+//pregunta 63
+    $scope.contribuciones = {
+    opciones: [
+      {id: '1', name: 'Contribución anual de los hogares de Cayambe'},
+      {id: '2', name: 'Tasa anual obligatoria a todos los hogares'},
+      {id: '3', name: 'Contribución en el control, cuidado o limpieza'},
+      {id: '4', name: 'Contribución obligatoria a las empresas'}    ]
+   };
+
    $scope.poll = {
 		parroquia: '',
 		sector: [{
