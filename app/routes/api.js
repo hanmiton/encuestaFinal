@@ -107,7 +107,7 @@ module.exports = function(router){
 		res182 = req.body.res18[0].res2;
 		res183 = req.body.res18[0].res3;
 		poll.res18.push({res1: res181, res2: res182, res3: res183});
-/*
+
 		//pregunta 19
 		poll.res19 = req.body.res19;
 
@@ -117,7 +117,7 @@ module.exports = function(router){
 		res203 = req.body.res20[0].res3;
 		poll.res20.push({res1: res201, res2: res202, res3: res203});
 
-
+/*
 			//pregunta 21
 		id211 = req.body.res21[0].per.id;
 		id212 = req.body.res21[1].per.id;
