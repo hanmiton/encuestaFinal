@@ -146,14 +146,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch1" value= "1" checked/>
+                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch1" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch2" value= "0" checked/>
+                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch2" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -169,14 +169,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch3" value= "1" checked/>
+                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch3" value= "1" />
                   <label for="ch3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch4" value= "0" checked/>
+                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch4" value= "0" />
                   <label for="ch4">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -225,14 +225,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-click="poll.res13 = 1" ng-model= "poll.res13" type="radio" name="preg13" id="ch7" value= "1" checked/>
+                  <input ng-click="poll.res13 = 1" ng-model= "poll.res13" type="radio" name="preg13" id="ch7" value= "1" />
                   <label for="ch7">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-click="poll.res13 = 0" ng-model= "poll.res13" type="radio" name="preg13" id="ch8" value= "0" checked/>
+                  <input ng-click="poll.res13 = 0" ng-model= "poll.res13" type="radio" name="preg13" id="ch8" value= "0" />
                   <label for="ch8">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -248,38 +248,33 @@
         </fieldset>
 
 
-<!--
         <fieldset>
           <h2 class="fs-title">¿Conoce edificios o inmuebles patrimoniales en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg15" id="ch7" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-click="poll.res15 = 1" ng-model= "poll.res15" type="radio" name="preg15" id="ch9" value= "1" />
+                  <label for="ch9">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg15" id="ch8" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-click="poll.res15 = 0" ng-model= "poll.res15" type="radio" name="preg15" id="ch10" value= "0"/>
+                  <label for="ch10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          <div ng-show="poll.res15">
+            <h2 class="fs-title">Señale tres edificios o inmuebles patrimoniales que usted conoce de Cayambe: </h2>
+            <input ng-model= "poll.res16[0].res1" type="text" placeholder="Especifique"/>
+            <input ng-model= "poll.res16[0].res2" type="text" placeholder="Especifique"/>
+            <input ng-model= "poll.res16[0].res3" type="text" placeholder="Especifique"/>
+          </div>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-       
-
-        <fieldset>
-          <h2 class="fs-title">Señale tres edificios o inmuebles patrimoniales que usted conoce de Cayambe: </h2>
-          <input type="text" placeholder="Sitio1"/>
-          <input type="text" placeholder="Sitio2"/>
-          <input type="text" placeholder="Sitio3"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
 
 
         <fieldset>
@@ -287,33 +282,28 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-click="poll.res17 = 1" ng-model= "poll.res17" type="radio" name="preg17" id="ch11" value= "1" />
+                  <label for="ch11">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-click="poll.res17 = 0" ng-model= "poll.res17" type="radio" name="preg17" id="ch12" value= "0" />
+                  <label for="ch12">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          <div ng-show="poll.res17">
+            <h2 class="fs-title">Señale tres principales conocimientos, entre  leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe, señale los tres principales: </h2>
+              <input ng-model= "poll.res18[0].res1" type="text" placeholder="Sitio1"/>
+              <input ng-model= "poll.res18[0].res2" type="text" placeholder="Sitio2"/>
+              <input ng-model= "poll.res18[0].res3" type="text" placeholder="Sitio3"/>
+          </div>
+         
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-
-       
-
-        <fieldset>
-          <h2 class="fs-title">Señale tres principales conocimientos, entre  leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe, señale los tres principales: </h2>
-          <input type="text" placeholder="Sitio1"/>
-          <input type="text" placeholder="Sitio2"/>
-          <input type="text" placeholder="Sitio3"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-
 
 
         <fieldset>
@@ -321,34 +311,29 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg19" id="ch7" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-click="poll.res19 = 1" ng-model= "poll.res19" type="radio" name="preg19" id="ch13" value= "1" />
+                  <label for="ch13">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg19" id="ch8" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-click="poll.res19 = 0" ng-model= "poll.res19" type="radio" name="preg19" id="ch14" value= "0" />
+                  <label for="ch14">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          <div ng-show="poll.res19">
+               <h2 class="fs-title">Señale tres principales conocimientos, entre tradiciones, leyendas, cuentos, juegos, ritos o conocimientos de Cayambe, señale los tres principales que se han  perdido: </h2>
+              <input ng-model= "poll.res20[0].res1" type="text" placeholder="Sitio1"/>
+              <input ng-model= "poll.res20[0].res2" type="text" placeholder="Sitio2"/>
+              <input ng-model= "poll.res20[0].res3" type="text" placeholder="Sitio3"/>
+          </div>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-       
-
-        <fieldset>
-          <h2 class="fs-title">Señale tres principales conocimientos, entre tradiciones, leyendas, cuentos, juegos, ritos o conocimientos de Cayambe, señale los tres principales que se han  perdido: </h2>
-          <input type="text" placeholder="Sitio1"/>
-          <input type="text" placeholder="Sitio2"/>
-          <input type="text" placeholder="Sitio3"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-
-      
+  <!--    
   
         <fieldset>
           <h2 class="fs-title">Quién le hizo conocer el patrimonio: </h2>
@@ -398,14 +383,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -414,14 +399,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -430,14 +415,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -446,14 +431,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -462,14 +447,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -478,14 +463,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg226" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg226" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg226" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg226" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -494,14 +479,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -541,14 +526,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTurismo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Educativa&nbsp&nbsp</label>
               </div>
           </div>
@@ -556,14 +541,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCelebración&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSanación&nbsp&nbsp</label>
               </div>
           </div>
@@ -571,7 +556,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -589,7 +574,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo conoce&nbsp&nbsp</label>
               </div>
           </div>
@@ -597,7 +582,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay informacion&nbsp&nbsp</label>
               </div>
           </div>
@@ -605,7 +590,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
@@ -613,7 +598,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtrohay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
@@ -632,14 +617,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -648,14 +633,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -664,14 +649,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -680,14 +665,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -718,14 +703,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTurismo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEducativa&nbsp&nbsp</label>
               </div>
           </div>
@@ -733,14 +718,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCelebración&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -757,7 +742,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo conoce&nbsp&nbsp</label>
               </div>
           </div>
@@ -765,7 +750,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay informacion&nbsp&nbsp</label>
               </div>
           </div>
@@ -773,7 +758,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
@@ -781,7 +766,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtrohay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
@@ -800,14 +785,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -816,14 +801,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -832,14 +817,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -848,14 +833,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -864,14 +849,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -880,14 +865,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg226" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg226" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg226" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg226" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -896,14 +881,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -920,14 +905,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -936,14 +921,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -952,14 +937,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -976,14 +961,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -998,14 +983,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1021,14 +1006,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1068,14 +1053,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1084,14 +1069,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1100,14 +1085,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1116,14 +1101,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1132,14 +1117,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1148,14 +1133,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1173,14 +1158,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1189,14 +1174,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1205,14 +1190,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1221,14 +1206,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1247,14 +1232,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1263,14 +1248,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1279,14 +1264,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1295,14 +1280,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1311,14 +1296,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1328,14 +1313,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1345,14 +1330,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1361,14 +1346,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1377,14 +1362,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1394,14 +1379,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1410,14 +1395,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1435,14 +1420,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1451,14 +1436,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1467,14 +1452,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1483,14 +1468,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1499,14 +1484,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1515,14 +1500,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1548,14 +1533,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1571,14 +1556,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1594,14 +1579,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1618,14 +1603,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1634,14 +1619,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1650,14 +1635,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1666,14 +1651,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1682,14 +1667,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1699,14 +1684,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1716,14 +1701,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1732,14 +1717,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1748,14 +1733,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1764,14 +1749,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1790,14 +1775,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1806,14 +1791,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1822,14 +1807,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1838,14 +1823,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1854,14 +1839,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1871,14 +1856,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1888,14 +1873,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1904,14 +1889,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1920,14 +1905,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1937,14 +1922,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1953,14 +1938,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1978,14 +1963,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -1994,14 +1979,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2010,14 +1995,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2026,14 +2011,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2042,14 +2027,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2059,14 +2044,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2076,14 +2061,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2092,14 +2077,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2118,14 +2103,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2134,14 +2119,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2150,14 +2135,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2166,14 +2151,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2182,14 +2167,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2199,14 +2184,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2224,14 +2209,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2240,14 +2225,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2256,14 +2241,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2272,14 +2257,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2288,14 +2273,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2306,7 +2291,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2317,7 +2302,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2325,7 +2310,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2340,14 +2325,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2363,14 +2348,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2386,14 +2371,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2409,14 +2394,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2432,14 +2417,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg227" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[1].name}}nbsp&nbsp</label>
               </div>
           </div>
@@ -2447,7 +2432,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg227" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2465,14 +2450,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2499,14 +2484,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2514,14 +2499,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2529,7 +2514,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[4].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2537,7 +2522,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[5].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2545,7 +2530,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -2563,14 +2548,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2578,14 +2563,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2593,7 +2578,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[4].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2601,7 +2586,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[5].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2609,7 +2594,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[6].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2617,7 +2602,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -2636,14 +2621,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2652,14 +2637,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2668,14 +2653,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2684,14 +2669,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2700,14 +2685,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2718,7 +2703,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2727,7 +2712,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2736,7 +2721,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2745,7 +2730,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2755,7 +2740,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2764,7 +2749,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2774,7 +2759,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2783,7 +2768,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2793,7 +2778,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2802,7 +2787,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2812,7 +2797,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg225" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
@@ -2820,7 +2805,7 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg225" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2834,14 +2819,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2857,14 +2842,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2879,14 +2864,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg17" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg17" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2902,14 +2887,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2917,14 +2902,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg24" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2933,7 +2918,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg24" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -2953,14 +2938,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg221" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg221" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2969,14 +2954,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg222" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg222" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2985,14 +2970,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg223" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg223" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -3001,14 +2986,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" checked/>
+                  <input type="radio" name="preg224" id="ch7" value= "1" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" checked/>
+                  <input type="radio" name="preg224" id="ch8" value= "0" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>

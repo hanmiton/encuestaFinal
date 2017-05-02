@@ -351,6 +351,21 @@ angular.module('pollApp',['appRoutes'])
       res1: '',
       res2: '',
       res3: ''
+    }],
+     res16: [{
+      res1: '',
+      res2: '',
+      res3: ''
+    }],
+    res18: [{
+      res1: '',
+      res2: '',
+      res3: ''
+    }],
+    res20: [{
+      res1: '',
+      res2: '',
+      res3: ''
     }]
 
 
