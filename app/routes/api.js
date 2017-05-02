@@ -118,6 +118,35 @@ module.exports = function(router){
 		res203 = req.body.res20[0].res3;
 		poll.res20.push({res1: res201, res2: res202, res3: res203});
 
+
+			//pregunta 21
+		id211 = req.body.res21[0].per.id;
+		id212 = req.body.res21[1].per.id;
+		id213 = req.body.res21[2].per.id;
+		id214 = req.body.res21[3].per.id;
+		id215 = req.body.res21[4].per.id;
+		id216 = req.body.res21[5].per.id;
+
+		per211 = req.body.res21[0].per.name;
+		per212 = req.body.res21[1].per.name;
+		per213 = req.body.res21[2].per.name;
+		per214 = req.body.res21[3].per.name;
+		per215 = req.body.res21[4].per.name;
+		per216 = req.body.res21[5].per.name;
+		res211 = req.body.res21[0].patri;
+		res212 = req.body.res21[1].patri;
+		res213 = req.body.res21[2].patri;
+		res214 = req.body.res21[3].patri;
+		res215 = req.body.res21[4].patri;
+		res216 = req.body.res21[5].patri;
+
+		poll.res21.push({patri: res211, per: per211, id: id211});
+		poll.res21.push({patri: res212, per: per212, id: id212});
+		poll.res21.push({patri: res213, per: per213, id: id213});
+		poll.res21.push({patri: res214, per: per214, id: id214});
+		poll.res21.push({patri: res215, per: per215, id: id215});
+		poll.res21.push({patri: res216, per: per216, id: id216});
+		
 		poll.final = req.body.final;
 
 

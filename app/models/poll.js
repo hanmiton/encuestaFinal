@@ -37,6 +37,11 @@ var ressubSchema = new mongoose.Schema({
 	res3: { type: String, required: true }
 });
 
+//pregunta 21
+var respatriSchema = new mongoose.Schema({ 
+	patri: { type: String, required: true },
+	per: { type: String, required: true }
+});
 
 // Document schema for polls
 var PollSchema = new mongoose.Schema({
@@ -58,6 +63,7 @@ var PollSchema = new mongoose.Schema({
 	res18: [ressubSchema],
 	res19: Boolean,
 	res20: [ressubSchema],
+	res21: [respatriSchema],
 	final: { type: String, required: true }
 });
 

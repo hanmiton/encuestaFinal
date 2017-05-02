@@ -366,9 +366,26 @@ angular.module('pollApp',['appRoutes'])
       res1: '',
       res2: '',
       res3: ''
+    }],
+    res21:[{
+      patri: '',
+      per:''
+    }, {
+      patri: '',
+      per:''
+    },{
+      patri: '',
+      per:''
+    }, {
+      patri: '',
+      per:''
+    },{
+      patri: '',
+      per:''
+    }, {
+      patri: '',
+      per:''
     }]
-
-
 	};
 
 	$scope.addChoice = function() {
@@ -393,9 +410,16 @@ angular.module('pollApp',['appRoutes'])
 		//$scope.poll.direccion[0].dir1 =  regData.direccion.dir1;
 		//$scope.poll.direccion[0].dir2 =  regData.direccion.dir2;
 		//$scope.poll.comunidad =  regData.comunidad;
-		$scope.poll.final =  regData.final;
-		
-		//console.log($scope.poll);
+		$scope.poll.res21[0].patri =  $scope.poll.res18[0].res1 ;
+    $scope.poll.res21[1].patri =  $scope.poll.res18[0].res2 ;
+    $scope.poll.res21[2].patri =  $scope.poll.res18[0].res3 ;
+    $scope.poll.res21[3].patri =  $scope.poll.res20[0].res1 ;
+    $scope.poll.res21[4].patri =  $scope.poll.res20[0].res2 ;
+    $scope.poll.res21[5].patri =  $scope.poll.res20[0].res3 ;
+   
+    $scope.poll.final =  regData.final;
+
+		console.log($scope.poll);
 
         $http.post('/api/polls', $scope.poll);
       };
