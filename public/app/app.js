@@ -385,7 +385,16 @@ angular.module('pollApp',['appRoutes'])
     }, {
       patri: '',
       per:''
-    }]
+    }],
+    res22: [{
+      res1: '',
+      res2: '',
+      res3: '',
+      res4: '',
+      res5: '',
+      res6: '',
+      res7: '',
+    }],
 	};
 
 	$scope.addChoice = function() {
