@@ -37,45 +37,42 @@
         </ul>
   <!--Datos iniciales-->
   
-
-  
         <fieldset>
 
           <h2 class="fs-title">Parroquia</h2>
-          <input type="text" name="parroquia" ng-model="regData.parroquia"  placeholder="Parroquia"/>
+          <input type="text" name="parroquia" ng-model="poll.parroquia"  placeholder="Parroquia"/>
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Zona</h2>
-          <input type="number" min="0" max="9" name="zdig1" ng-model="regData.zona.zdig1"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="zdig2" ng-model="regData.zona.zdig2"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="zdig3" ng-model="regData.zona.zdig3"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="zdig1" ng-model="poll.zona[0].zdig1"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="zdig2" ng-model="poll.zona[0].zdig2"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="zdig3" ng-model="poll.zona[0].zdig3"  placeholder="0"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Sector</h2>
-          <input type="number" min="0" max="9" name="sdig1" ng-model="regData.sector.sdig1"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="sdig2" ng-model="regData.sector.sdig2"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="sdig3" ng-model="regData.sector.sdig3"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="sdig1" ng-model="poll.sector[0].sdig1"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="sdig2" ng-model="poll.sector[0].sdig2"  placeholder="0"/>
+          <input type="number" min="0" max="9" name="sdig3" ng-model="poll.sector[0].sdig3"  placeholder="0"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
          <fieldset>
           <h2 class="fs-title">Comunidad</h2>
-          <input type="text" name="comunidad" ng-model="regData.comunidad"  placeholder="Comunidad"/>
+          <input type="text" name="comunidad" ng-model="poll.comunidad"  placeholder="Comunidad"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Dirección</h2>
-          <input type="text" name="dir1" ng-model="regData.direccion.dir1"  placeholder="Calle Principal"/>
-          <input type="text" name="dir2" ng-model="regData.direccion.dir2"  placeholder="Calle Secundaria"/>
+          <input type="text" name="dir1" ng-model="poll.direccion[0].dir1"  placeholder="Calle Principal"/>
+          <input type="text" name="dir2" ng-model="poll.direccion[0].dir2"  placeholder="Calle Secundaria"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
-
         </fieldset>
-        <!--pregunta de 1-8-->
+      
         
         <fieldset>
         <h2 class="fs-title">Personas</h2>
@@ -138,73 +135,71 @@
            </tr>
           
         </table>
-
            <input type="button" name="previous" class="action-button" value="Añadir" ng-click="addChoice()"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-        
-        <!-- pregunta 9 -->
-        
+          <input type="button" name="next" class="next action-button" value="Next"/>
+        </fieldset>    
+          
+        <!--pregunta 9-->
         <fieldset>
           <h2 class="fs-title">¿Sabía que el patrimonio cultural de Cayambe es una herencia propia de sus ancestros?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg9" id="ch1" value= "1" checked/>
+                  <input ng-model= "poll.res1" type="radio" name="preg9" id="ch1" value= "1" checked/>
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg9" id="ch2" value= "0" checked/>
+                  <input ng-model= "poll.res1" type="radio" name="preg9" id="ch2" value= "0" checked/>
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-      <!--pregunta 10 -->
       
         <fieldset>
           <h2 class="fs-title">¿Conoce que Cayambe tiene abundante patrimonio cultural?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg10" id="ch3" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res2" type="radio" name="preg10" id="ch3" value= "1" checked/>
+                  <label for="ch3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg10" id="ch4" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res2" type="radio" name="preg10" id="ch4" value= "0" checked/>
+                  <label for="ch4">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-    <!--pregunta11 -->
+   
     
         <fieldset>
           <h2 class="fs-title">¿Conoce sitios arqueológicos en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg11" id="ch5" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res3" type="radio" name="preg11" id="ch5" value= "1"/>
+                  <label for="ch5">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg11" id="ch6" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res3" type="radio" name="preg11" id="ch6" value= "0"/>
+                  <label for="ch6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -212,8 +207,8 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregunta 12-->
-
+       
+<!--
         <fieldset>
           <h2 class="fs-title">Señale tres sitios arqueológicos que usted conoce de Cayambe:</h2>
           <input type="text" placeholder="Sitio1"/>
@@ -223,7 +218,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         
-<!--pregunta 13-->
 
 
         <fieldset>
@@ -247,7 +241,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-         <!--pregunta 14-->
+        
 
         <fieldset>
           <h2 class="fs-title">Señale tres sitios sagrados que usted conoce de Cayambe: </h2>
@@ -258,7 +252,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 15-->
 
         <fieldset>
           <h2 class="fs-title">¿Conoce edificios o inmuebles patrimoniales en Cayambe ?</h2>
@@ -281,7 +274,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregunta 16-->
+       
 
         <fieldset>
           <h2 class="fs-title">Señale tres edificios o inmuebles patrimoniales que usted conoce de Cayambe: </h2>
@@ -292,7 +285,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 17-->
 
         <fieldset>
           <h2 class="fs-title">¿Conoce leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe ?</h2>
@@ -315,7 +307,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregunta 18-->
+       
 
         <fieldset>
           <h2 class="fs-title">Señale tres principales conocimientos, entre  leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe, señale los tres principales: </h2>
@@ -326,7 +318,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 19-->
 
 
         <fieldset>
@@ -350,7 +341,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregunta 20-->
+       
 
         <fieldset>
           <h2 class="fs-title">Señale tres principales conocimientos, entre tradiciones, leyendas, cuentos, juegos, ritos o conocimientos de Cayambe, señale los tres principales que se han  perdido: </h2>
@@ -361,10 +352,10 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregunta 21 asitio bsitio csitio dsitio esitio fsitio model-->
+      
   
         <fieldset>
-          <h2 class="fs-title">Quién le hizo conocer el patrimonio:  </h2>
+          <h2 class="fs-title">Quién le hizo conocer el patrimonio: </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="asitio">
@@ -404,8 +395,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 22 mejorar con javascript-->
     
         <fieldset>
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales conoce ?</h2>
@@ -527,7 +516,6 @@
         </fieldset>
 
 
-<!--pregunta 23-->
    
         <fieldset>
           <h2 class="fs-title">¿Cuántas veces, el año 2016, ha visitado los sitios patrimoniales ?</h2>
@@ -550,7 +538,6 @@
         </fieldset>
       
 
-<!--pregunta 24-->
       
       <fieldset>
           <h2 class="fs-title">¿Por qué razón visitó los bienes ?</h2>
@@ -599,7 +586,7 @@
         </fieldset>
          
 
-      <!--pregunta 25-->
+     
       
       <fieldset>
           <h2 class="fs-title">¿Por qué no visitó ?</h2>
@@ -641,7 +628,7 @@
         </fieldset>
         
 
-        <!--pregunta 26-->
+       
         
         <fieldset>
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales inmuebles conoce?</h2>
@@ -713,7 +700,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 27-->
 
         <fieldset>
           <h2 class="fs-title">¿Cuántas veces ha visitado los siguientes sitios patrimoniales ?</h2>
@@ -730,7 +716,6 @@
         </fieldset>
 
 
-<!--pregunta 28-->
    
       <fieldset>
           <h2 class="fs-title">¿Por qué razón visitó los bienes ?</h2>
@@ -770,7 +755,6 @@
         </fieldset>
 
   
-<!--pregunta 29-->
 
         <fieldset>
           <h2 class="fs-title">¿Por qué no visitó ?</h2>
@@ -812,7 +796,7 @@
         </fieldset>
       
 
- <!--pregunta 30 -->
+>
  
         <fieldset>
           <h2 class="fs-title">¿ En cuál celebración participa ?</h2>
@@ -933,7 +917,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-        <!--pregutna 31-->
 
         <fieldset>
           <h2 class="fs-title">Cuándo presenta síntomas de enfermedad, a quien acude: </h2>
@@ -990,7 +973,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-  <!--pregunta 32-->
+ 
   
      <fieldset>
           <h2 class="fs-title">¿ Conoce que en Cayambe atraviesa la línea equinoccial (Latitud 0" 0´) ?</h2>
@@ -1013,7 +996,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 33-->
 
 <fieldset>
           <h2 class="fs-title">¿ Conoce que en Cayambe se encuentra el punto más alto del mundo en la línea equinoccial ?</h2>
@@ -1037,7 +1019,6 @@
         </fieldset>
 
 
-<!--pregunta 34-->
 
 <fieldset>
           <h2 class="fs-title">¿ Conoce la medición del tiempo para la producción agrícola y celebraciones locales ?</h2>
@@ -1061,7 +1042,7 @@
         </fieldset>
 
 
- <!--pregunta 35-->
+
 
         <fieldset>
           <h2 class="fs-title">Cuáles son los tres principales alimentos preparados originarios de Cayambe que se expenden: </h2>
@@ -1073,7 +1054,6 @@
         </fieldset>
 
 
-<!--pregunta 36-->
 
         <fieldset>
           <h2 class="fs-title">Cuáles son los tres principales alimentos preparados originarios de Cayambe que no se expenden: </h2>
@@ -1084,8 +1064,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 37 -->
+>
  
         <fieldset>
           <h2 class="fs-title">Tiene en su casa objetos arqueológicos:</h2>
@@ -1190,7 +1169,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregutna 38-->
+
 
   <fieldset>
           <h2 class="fs-title">Cómo obtuvo los objetos arqueológicos:</h2>
@@ -1264,8 +1243,7 @@
         </fieldset>
 
 
-
-<!--pregunta 39 -->
+>
  
         <fieldset>
           <h2 class="fs-title">De qué lugar son los objetos arqueológicos:</h2>
@@ -1453,8 +1431,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 40 -->
+>
  
         <fieldset>
           <h2 class="fs-title">Cómo están organizados los objetos arqueológicos:</h2>
@@ -1559,7 +1536,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 41-->
    
         <fieldset>
           <h2 class="fs-title">¿Cuántas piezas tienen descripción  ?</h2>
@@ -1570,7 +1546,6 @@
         </fieldset>
       
 
-<!--pregunta 42-->
 
      <fieldset>
           <h2 class="fs-title">¿ Ha realizado exhibiciones públicas de las piezas ?</h2>
@@ -1594,7 +1569,6 @@
         </fieldset>
 
 
-<!--pregunta 43-->
 
      <fieldset>
           <h2 class="fs-title">¿Alguna entidad pública le ha informado como debe protegerlos?</h2>
@@ -1618,7 +1592,6 @@
         </fieldset>
 
 
-<!--pregunta 44-->
 
      <fieldset>
           <h2 class="fs-title">¿Al menos una de las piezas ha sido restaurada?</h2>
@@ -1641,8 +1614,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 45 -->
+>
  
         <fieldset>
           <h2 class="fs-title">Tiene en su casa objetos de la época colonial o republicana. Confirme si posee alguno entre los siguientes tipos:</h2>
@@ -1813,8 +1785,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 46 -->
+>
  
         <fieldset>
          <h2 class="fs-title">Tiene en su casa objetos de la época colonial o republicana. Confirme si posee alguno entre los siguientes tipos: </h2>
@@ -2003,8 +1974,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-<!--pregunta 47 -->
+>
 
         <fieldset>
           <h2 class="fs-title">Documentos de interés histórico que tengan más de cincuenta años de haber sido producidos: </h2>
@@ -2144,8 +2114,7 @@
         </fieldset>
 
 
-
-<!--pregunta 48 -->
+>
 
         <fieldset>
           <h2 class="fs-title">Documentos visuales o sonoros: </h2>
@@ -2251,8 +2220,7 @@
 
 
 
-
-<!--pregunta 49 -->
+>
 
         <fieldset>
           <h2 class="fs-title">Documentos de más de 30 años: </h2>
@@ -2370,7 +2338,6 @@
         </fieldset>
 
 
-<!--pregunta 50-->
 
      <fieldset>
           <h2 class="fs-title">¿Debería el Municipio realizar una campaña de registro de los bienes patrimoniales?</h2>
@@ -2394,7 +2361,6 @@
         </fieldset>
 
 
-<!--pregunta 51-->
 
      <fieldset>
           <h2 class="fs-title">¿Estaría dispuesto a registrat sus bienes patrimoniales en el Municipio?</h2>
@@ -2418,7 +2384,6 @@
         </fieldset>
 
 
-<!--pregunta 52-->
 
      <fieldset>
           <h2 class="fs-title">¿Cree usted que los bienes patrimoniales deben ser exhibidos?</h2>
@@ -2442,7 +2407,6 @@
         </fieldset>
 
 
-<!--pregunta 53-->
 
      <fieldset>
           <h2 class="fs-title">¿Estaría dispuesto a que sus bienes puedan ser exhibidos ?</h2>
@@ -2466,7 +2430,6 @@
         </fieldset>
 
 
-<!--pregunta 54-->
   
       <fieldset>
           <h2 class="fs-title">Con qué temporalidad estaría dispuesto a que sean exhibidos:</h2>
@@ -2500,7 +2463,6 @@
 
   
 
-<!--pregunta 55-->
 
      <fieldset>
           <h2 class="fs-title">¿Estaría dispuesto a exhibir en su vivienda, ya se para turistas o visitantes?</h2>
@@ -2524,7 +2486,6 @@
         </fieldset>
 
 
-<!--pregunta 56-->
 
         <fieldset>
           <h2 class="fs-title">Señale en orden de importancia, los tres principales bienes patrimoniales de Cayambe que se deben proteger:</h2>
@@ -2536,7 +2497,6 @@
         </fieldset>
 
      
-<!--pregunta 57-->
 
       <fieldset>
           <h2 class="fs-title">¿ Cuál institución en Cayambe debe conservar, preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines ?</h2>
@@ -2601,7 +2561,6 @@
     
 
   
-<!--pregunta 58-->
 
       <fieldset>
           <h2 class="fs-title">¿ Cuál organización en su barrio o cumindad, debe ser responsable de la gestión de la cultura y del patrimonio cultural ?</h2>
@@ -2673,8 +2632,7 @@
         </fieldset>
     
 
-
-<!--pregunta 59 -->
+>
 
         <fieldset>
           <h2 class="fs-title"> El Municipio tiene dichas competencias. ¿Cuáles facultades conoce usted que tiene el GAD, respecto al patrimonio cultural ? </h2>
@@ -2874,7 +2832,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 60-->
 
      <fieldset>
           <h2 class="fs-title">¿Conoce que el Municipio, para el cumplimiento de las competencias y facultades, cuenta con una jefatura compuesta por dos servidores públicos?</h2>
@@ -2898,7 +2855,6 @@
         </fieldset>
 
 
-<!--pregunta 60-->
 
      <fieldset>
           <h2 class="fs-title">¿Conoce que el Municipio, para el cumplimiento de las competencias y facultades, cuenta con una jefatura compuesta por dos servidores públicos?</h2>
@@ -2921,7 +2877,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!--pregunta 61-->
 
      <fieldset>
           <h2 class="fs-title">¿Debido a la abundancia e importancia del patrimonio cultural en Cayambe, considera que se debe fortalecer el organismo que gestiona el patrimonio?</h2>
@@ -2945,7 +2900,6 @@
         </fieldset>
 
 
-<!--pregunta 62-->
 
       <fieldset>
           <h2 class="fs-title">¿ Para cumplir las competencias y facultades respecto al patrimonio cultural, ¿qué tipo de organismo considera usted que se requiere?</h2>
@@ -2995,8 +2949,7 @@
    
 
 
-
-<!--pregunta 63 -->
+>
 
         <fieldset>
           <h2 class="fs-title">A fin de preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines, de qué forma se debería financiar:</h2>
@@ -3068,8 +3021,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
-
+-->
         <fieldset>
           <h2 class="fs-title">¿Cuánto sería el valor anual que usted estaría dispuesto a contribuir?</h2>
           <input type="text" name="final" ng-model="regData.final" placeholder="Final"/>

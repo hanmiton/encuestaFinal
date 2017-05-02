@@ -341,7 +341,9 @@ angular.module('pollApp',['appRoutes'])
 						idioma: '',
 						lugar: '',
 						nivel: ''
-	}]
+	   }]
+
+
 	};
 
 	$scope.addChoice = function() {
@@ -356,19 +358,19 @@ angular.module('pollApp',['appRoutes'])
 	};
 
   $scope.submit = function(regData) {
-        $scope.poll.parroquia =  regData.parroquia;
-		$scope.poll.sector[0].sdig1 =  regData.sector.sdig1;
-		$scope.poll.sector[0].sdig2 =  regData.sector.sdig2;
-		$scope.poll.sector[0].sdig3 =  regData.sector.sdig3;
-		$scope.poll.zona[0].zdig1 =  regData.zona.zdig1;
-		$scope.poll.zona[0].zdig2 =  regData.zona.zdig2;
-		$scope.poll.zona[0].zdig3 =  regData.zona.zdig3;
-		$scope.poll.direccion[0].dir1 =  regData.direccion.dir1;
-		$scope.poll.direccion[0].dir2 =  regData.direccion.dir2;
-		$scope.poll.comunidad =  regData.comunidad;
+    //$scope.poll.parroquia =  regData.parroquia;
+		//$scope.poll.sector[0].sdig1 =  regData.sector.sdig1;
+		//$scope.poll.sector[0].sdig2 =  regData.sector.sdig2;
+		//$scope.poll.sector[0].sdig3 =  regData.sector.sdig3;
+		//$scope.poll.zona[0].zdig1 =  regData.zona.zdig1;
+		//$scope.poll.zona[0].zdig2 =  regData.zona.zdig2;
+		//$scope.poll.zona[0].zdig3 =  regData.zona.zdig3;
+		//$scope.poll.direccion[0].dir1 =  regData.direccion.dir1;
+		//$scope.poll.direccion[0].dir2 =  regData.direccion.dir2;
+		//$scope.poll.comunidad =  regData.comunidad;
 		$scope.poll.final =  regData.final;
 		
-		console.log($scope.poll);
+		//console.log($scope.poll);
 
         $http.post('/api/polls', $scope.poll);
       };

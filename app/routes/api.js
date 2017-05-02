@@ -5,6 +5,7 @@ module.exports = function(router){
 	//parte para grabar en base de datos
 	router.post('/polls', function(req,res){
 		console.log(req.body);
+		
 		var poll = new Poll();
 		poll.parroquia = req.body.parroquia;
 		//sector
@@ -65,6 +66,12 @@ module.exports = function(router){
 	//console.log(req.body.personas.length);
 /*		
 */
+		//pregunta 1
+		poll.res1 = req.body.res1;
+		//pregunta 2
+		poll.res2 = req.body.res2;
+		//pregunta 2
+		poll.res3 = req.body.res3;
 		poll.final = req.body.final;
 
 		//console.log(poll);

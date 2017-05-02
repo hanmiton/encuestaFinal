@@ -40,6 +40,9 @@ var PollSchema = new mongoose.Schema({
 	comunidad: { type: String, required: true },
 	direccion: [dirSchema],
 	personas : [perSchema],
+	res1: Boolean,
+	res2: Boolean,
+	res3: Boolean,
 	final: { type: String, required: true }
 });
 
