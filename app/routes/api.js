@@ -66,13 +66,32 @@ module.exports = function(router){
 	//console.log(req.body.personas.length);
 /*		
 */
-		//pregunta 1
-		poll.res1 = req.body.res1;
-		//pregunta 2
-		poll.res2 = req.body.res2;
-		//pregunta 2
-		poll.res3 = req.body.res3;
+		//pregunta 9
+		poll.res9 = req.body.res9;
+		//pregunta 10
+		poll.res10 = req.body.res10;
+		//pregunta 11
+		poll.res11 = req.body.res11;
+
+		//pregunta 12
+			//zona
+		res121 = req.body.res12[0].res1;
+		res122 = req.body.res12[0].res2;
+		res123 = req.body.res12[0].res3;
+		poll.res12.push({res1: res121, res2: res122, res3: res123});
+
+		//pregunta 13
+		poll.res13 = req.body.res13;
+
+		//pregunta 14
+			//zona
+		res141 = req.body.res14[0].res1;
+		res142 = req.body.res14[0].res2;
+		res143 = req.body.res14[0].res3;
+		poll.res14.push({res1: res141, res2: res142, res3: res143});
 		poll.final = req.body.final;
+
+
 
 		//console.log(poll);
 		if(req.body.parroquia == null || req.body.zona == null || req.body.sector == null || req.body.comunidad == null){

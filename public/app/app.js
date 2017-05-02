@@ -341,7 +341,17 @@ angular.module('pollApp',['appRoutes'])
 						idioma: '',
 						lugar: '',
 						nivel: ''
-	   }]
+	   }],
+     res12: [{
+      res1: '',
+      res2: '',
+      res3: ''
+    }],
+     res14: [{
+      res1: '',
+      res2: '',
+      res3: ''
+    }]
 
 
 	};

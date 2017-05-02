@@ -146,14 +146,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res1" type="radio" name="preg9" id="ch1" value= "1" checked/>
+                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch1" value= "1" checked/>
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res1" type="radio" name="preg9" id="ch2" value= "0" checked/>
+                  <input ng-model= "poll.res9" type="radio" name="preg9" id="ch2" value= "0" checked/>
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -169,14 +169,14 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res2" type="radio" name="preg10" id="ch3" value= "1" checked/>
+                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch3" value= "1" checked/>
                   <label for="ch3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res2" type="radio" name="preg10" id="ch4" value= "0" checked/>
+                  <input ng-model= "poll.res10" type="radio" name="preg10" id="ch4" value= "0" checked/>
                   <label for="ch4">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -191,68 +191,64 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res3" type="radio" name="preg11" id="ch5" value= "1"/>
+                  <input ng-click="poll.res11 = 1" ng-model= "poll.res11" type="radio" name="preg11" id="ch5" value= "1"/>
                   <label for="ch5">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res3" type="radio" name="preg11" id="ch6" value= "0"/>
+                  <input  ng-click="poll.res11 = 0"  ng-model= "poll.res11" type="radio" name="preg11" id="ch6" value= "0"/>
                   <label for="ch6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
 
-       
-<!--
-        <fieldset>
+         <div ng-show="poll.res11">
           <h2 class="fs-title">Señale tres sitios arqueológicos que usted conoce de Cayambe:</h2>
-          <input type="text" placeholder="Sitio1"/>
-          <input type="text" placeholder="Sitio2"/>
-          <input type="text" placeholder="Sitio3"/>
+          <input ng-model= "poll.res12[0].res1" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res12[0].res2" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res12[0].res3" type="text" placeholder="Especifique"/>
+          <!--
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
+          -->
+          </div>
+
+          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="button" name="next" class="next action-button" value="Next" />
+       
         </fieldset>
         
-
-
         <fieldset>
           <h2 class="fs-title">¿Conoce sitios sagrados en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg13" id="ch7" value= "1" checked/>
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-click="poll.res13 = 1" ng-model= "poll.res13" type="radio" name="preg13" id="ch7" value= "1" checked/>
+                  <label for="ch7">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg13" id="ch8" value= "0" checked/>
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-click="poll.res13 = 0" ng-model= "poll.res13" type="radio" name="preg13" id="ch8" value= "0" checked/>
+                  <label for="ch8">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-
-        
-
-        <fieldset>
-          <h2 class="fs-title">Señale tres sitios sagrados que usted conoce de Cayambe: </h2>
-          <input type="text" placeholder="Sitio1"/>
-          <input type="text" placeholder="Sitio2"/>
-          <input type="text" placeholder="Sitio3"/>
+           <div ng-show="poll.res13">
+               <h2 class="fs-title">Señale tres sitios sagrados que usted conoce de Cayambe: </h2>
+              <input ng-model= "poll.res14[0].res1" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res14[0].res2" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res14[0].res3" type="text" placeholder="Especifique"/>
+           </div>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
 
+<!--
         <fieldset>
           <h2 class="fs-title">¿Conoce edificios o inmuebles patrimoniales en Cayambe ?</h2>
           <br>

@@ -30,6 +30,12 @@ var perSchema = new mongoose.Schema({
 	nivel: { type: String, required: true }
 });
 
+// pregunta 12
+var ressubSchema = new mongoose.Schema({ 
+	res1: { type: String, required: true },
+	res2: { type: String, required: true },
+	res3: { type: String, required: true }
+});
 
 
 // Document schema for polls
@@ -40,9 +46,12 @@ var PollSchema = new mongoose.Schema({
 	comunidad: { type: String, required: true },
 	direccion: [dirSchema],
 	personas : [perSchema],
-	res1: Boolean,
-	res2: Boolean,
-	res3: Boolean,
+	res9: Boolean,
+	res10: Boolean,
+	res11: Boolean,
+	res12: [ressubSchema],
+	res13: Boolean,
+	res14: [ressubSchema],
 	final: { type: String, required: true }
 });
 
