@@ -74,13 +74,12 @@ module.exports = function(router){
 		poll.res11 = req.body.res11;
 
 		//pregunta 12
-			//zona
 		res121 = req.body.res12[0].res1;
 		res122 = req.body.res12[0].res2;
 		res123 = req.body.res12[0].res3;
 		poll.res12.push({res1: res121, res2: res122, res3: res123});
 
-/*
+
 		//pregunta 13
 		poll.res13 = req.body.res13;
 
@@ -89,7 +88,7 @@ module.exports = function(router){
 		res142 = req.body.res14[0].res2;
 		res143 = req.body.res14[0].res3;
 		poll.res14.push({res1: res141, res2: res142, res3: res143});
-
+/*
 		//pregunta 15
 		poll.res15 = req.body.res15;
 
