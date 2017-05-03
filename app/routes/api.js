@@ -222,6 +222,23 @@ module.exports = function(router){
 		res313 = req.body.res31[0].res3;
 		poll.res31.push({res1: res311, res2: res312, res3: res313});
 
+		poll.res32 = req.body.res32;
+		poll.res33 = req.body.res33;
+		poll.res34 = req.body.res34;
+
+		//pregunta 35
+		res351 = req.body.res35[0].res1;
+		res352 = req.body.res35[0].res2;
+		res353 = req.body.res35[0].res3;
+		poll.res35.push({res1: res351, res2: res352, res3: res353});
+
+
+		//pregunta 36
+		res361 = req.body.res36[0].res1;
+		res362 = req.body.res36[0].res2;
+		res363 = req.body.res36[0].res3;
+		poll.res36.push({res1: res361, res2: res362, res3: res363});
+
 		poll.final = req.body.final;
 
 		

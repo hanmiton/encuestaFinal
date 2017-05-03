@@ -134,6 +134,12 @@ var PollSchema = new mongoose.Schema({
 	res29: String,
 	res30: [ressub30Schema],
 	res31: [ressub31Schema],
+	res32: Boolean,
+	res33: Boolean,
+	res34: Boolean,
+	res35: [ressubSchema],
+	res36: [ressubSchema],
+	
 	final: { type: String }
 });
 

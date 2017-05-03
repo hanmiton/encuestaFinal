@@ -938,7 +938,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
--->
+
 
 
 
@@ -998,22 +998,23 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-<!-- 
+
   
      <fieldset>
+          <div> pregutna 32- 36</div>
           <h2 class="fs-title">¿ Conoce que en Cayambe atraviesa la línea equinoccial (Latitud 0" 0´) ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res32" type="radio" name="preg32" id="ch78" value= "1" />
+                  <label for="ch78">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res32" type="radio" name="preg32" id="ch79" value= "0" />
+                  <label for="ch79">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -1027,15 +1028,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res33" type="radio" name="preg33" id="ch80" value= "1" />
+                  <label for="ch80">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res33" type="radio" name="preg33" id="ch81" value= "0" />
+                  <label for="ch81">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -1050,15 +1051,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res34" type="radio" name="preg34" id="ch82" value= "1" />
+                  <label for="ch82">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res34" type="radio" name="preg34" id="ch83" value= "0" />
+                  <label for="ch83">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -1071,9 +1072,9 @@
 
         <fieldset>
           <h2 class="fs-title">Cuáles son los tres principales alimentos preparados originarios de Cayambe que se expenden: </h2>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res35[0].res1" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res35[0].res2" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res35[0].res3" type="text" placeholder="Especifique"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -1082,16 +1083,17 @@
 
         <fieldset>
           <h2 class="fs-title">Cuáles son los tres principales alimentos preparados originarios de Cayambe que no se expenden: </h2>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res36[0].res1" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res36[0].res2" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res36[0].res3" type="text" placeholder="Especifique"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-
->
+-->
+<!-- 
  
         <fieldset>
+        <div>pregunta  32-36</div>
           <h2 class="fs-title">Tiene en su casa objetos arqueológicos:</h2>
           <p>{{materiales.opciones[0].name}}</p>
           <br>
