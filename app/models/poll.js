@@ -83,6 +83,17 @@ var ressub27Schema = new mongoose.Schema({
 	res4: { type: Number }
 });
 
+// pregunta 30
+var ressub30Schema = new mongoose.Schema({ 
+	res1: { type: Number },
+	res2: { type: Number },
+	res3: { type: Number },
+	res4: { type: Number },
+	res5: { type: Number },
+	res6: { type: Number },
+	res7: { type: Number }
+});
+
 
 
 
@@ -115,6 +126,7 @@ var PollSchema = new mongoose.Schema({
 	res27: [ressub23Schema],
 	res28: String,
 	res29: String,
+	res30: [ressub30Schema],
 	final: { type: String }
 });
 

@@ -84,7 +84,6 @@ module.exports = function(router){
 
 
 
-/* pregunta 11- 12*/
 
 		//pregunta 13
 		poll.res13 = req.body.res13;
@@ -96,7 +95,6 @@ module.exports = function(router){
 		poll.res14.push({res1: res141, res2: res142, res3: res143});
 
 
-/* pregunta 15-16 */
 
 		//pregunta 15
 		poll.res15 = req.body.res15;
@@ -107,7 +105,6 @@ module.exports = function(router){
 		res163 = req.body.res16[0].res3;
 		poll.res16.push({res1: res161, res2: res162, res3: res163});
 
-/* pregunta 17-21 */
 		//pregunta 17
 		poll.res17 = req.body.res17;
 
@@ -207,6 +204,17 @@ module.exports = function(router){
 
 		//pregunta 29
 		poll.res29 = req.body.res29;
+
+
+		//pregunta 30
+		res301 = req.body.res30[0].res1;
+		res302 = req.body.res30[0].res2;
+		res303 = req.body.res30[0].res3;
+		res304 = req.body.res30[0].res4;
+		res305 = req.body.res30[0].res5;
+		res306 = req.body.res30[0].res6;
+		res307 = req.body.res30[0].res7;
+		poll.res30.push({res1: res301, res2: res302, res3: res303, res4: res304,res5: res305,res6: res306,res7: res307});
 
 		poll.final = req.body.final;
 
