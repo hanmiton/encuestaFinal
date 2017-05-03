@@ -2,53 +2,66 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var numSchema = new mongoose.Schema({ 
-	dig1: { type: Number, required: true },
-	dig2: { type: Number, required: true },
-	dig3: { type: Number, required: true }
+	dig1: { type: Number },
+	dig2: { type: Number },
+	dig3: { type: Number }
 });
 
 var dirSchema = new mongoose.Schema({ 
-	dir1: { type: String, required: true },
-	dir2: { type: String, required: true }
+	dir1: { type: String },
+	dir2: { type: String }
+	
 });
 
 var perSchema = new mongoose.Schema({ 
-	pnum: { type: Number, required: true },
-	parentesco: { type: String, required: true },
-	snum: { type: Number, required: true },
-	sexo: { type: String, required: true },
-	edad: { type: Number, required: true },
-	etnum: { type: Number, required: true },
-	etnia: { type: String, required: true },
-	punum: { type: Number, required: true },
-	pueblo: { type: String, required: true },
-	inum: { type: Number, required: true },
-	idioma: { type: String, required: true },
-	lnum: { type: Number, required: true },
-	lugar: { type: String, required: true },
-	nnum: { type: Number, required: true },
-	nivel: { type: String, required: true }
+	pnum: { type: Number },
+	parentesco: { type: String },
+	snum: { type: Number },
+	sexo: { type: String },
+	edad: { type: Number },
+	etnum: { type: Number },
+	etnia: { type: String },
+	punum: { type: Number },
+	pueblo: { type: String },
+	inum: { type: Number },
+	idioma: { type: String },
+	lnum: { type: Number },
+	lugar: { type: String },
+	nnum: { type: Number },
+	nivel: { type: String }
 });
 
 // pregunta 12 14 16 18
 var ressubSchema = new mongoose.Schema({ 
-	res1: { type: String, required: true },
-	res2: { type: String, required: true },
-	res3: { type: String, required: true }
+	res1: { type: String },
+	res2: { type: String },
+	res3: { type: String }
 });
 
 //pregunta 21
 var respatriSchema = new mongoose.Schema({ 
-	patri: { type: String, required: true },
-	per: { type: String, required: true }
+	patri: { type: String },
+	per: { type: String }
+});
+
+// pregunta 22
+var ressub22Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean },
+	res6: { type: Boolean },
+	res7: { type: Boolean },
+	otro: { type: String }
 });
 
 // Document schema for polls
 var PollSchema = new mongoose.Schema({
-	parroquia: { type: String, required: true },
+	parroquia: { type: String },
 	zona: [numSchema],
 	sector: [numSchema],
-	comunidad: { type: String, required: true },
+	comunidad: { type: String },
 	direccion: [dirSchema],
 	personas : [perSchema],
 	res9: Boolean,
@@ -64,7 +77,8 @@ var PollSchema = new mongoose.Schema({
 	res19: Boolean,
 	res20: [ressubSchema],
 	res21: [respatriSchema],
-	final: { type: String, required: true }
+	res22: [ressub22Schema],
+	final: { type: String }
 });
 
 module.exports = mongoose.model('Poll', PollSchema)

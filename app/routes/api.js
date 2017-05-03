@@ -7,7 +7,10 @@ module.exports = function(router){
 		console.log(req.body);
 		
 		var poll = new Poll();
+/*primera parte 1 - 10 */
+/*
 		poll.parroquia = req.body.parroquia;
+
 		//sector
 		sdig1 = req.body.sector[0].sdig1;
 		sdig2 = req.body.sector[0].sdig2;
@@ -63,13 +66,16 @@ module.exports = function(router){
 			nivel: nivel
 		});
 	}	
-	//console.log(req.body.personas.length);
-/*		
-*/
+
 		//pregunta 9
 		poll.res9 = req.body.res9;
 		//pregunta 10
 		poll.res10 = req.body.res10;
+
+*/
+
+
+/* pregunta 11- 12
 		//pregunta 11
 		poll.res11 = req.body.res11;
 
@@ -79,6 +85,9 @@ module.exports = function(router){
 		res123 = req.body.res12[0].res3;
 		poll.res12.push({res1: res121, res2: res122, res3: res123});
 
+/*
+
+/* pregunta 11- 12
 
 		//pregunta 13
 		poll.res13 = req.body.res13;
@@ -88,6 +97,9 @@ module.exports = function(router){
 		res142 = req.body.res14[0].res2;
 		res143 = req.body.res14[0].res3;
 		poll.res14.push({res1: res141, res2: res142, res3: res143});
+*/
+
+/* pregunta 15-16 
 
 		//pregunta 15
 		poll.res15 = req.body.res15;
@@ -97,8 +109,8 @@ module.exports = function(router){
 		res162 = req.body.res16[0].res2;
 		res163 = req.body.res16[0].res3;
 		poll.res16.push({res1: res161, res2: res162, res3: res163});
-
-
+*/
+/* pregunta 17-21
 		//pregunta 17
 		poll.res17 = req.body.res17;
 
@@ -145,11 +157,26 @@ module.exports = function(router){
 		poll.res21.push({patri: res214, per: per214, id: id214});
 		poll.res21.push({patri: res215, per: per215, id: id215});
 		poll.res21.push({patri: res216, per: per216, id: id216});
+		*/
+	
+		//pregunta 22
+		res221 = req.body.res22[0].res1;
+		res222 = req.body.res22[0].res2;
+		res223 = req.body.res22[0].res3;
+		res224 = req.body.res22[0].res4;
+		res225 = req.body.res22[0].res5;
+		res226 = req.body.res22[0].res6;
+		res227 = req.body.res22[0].res7;
+		res228 = req.body.res22[0].otro;
 		
+		poll.res22.push({res1: res221, res2: res222, res3: res223, res4: res224,  res5: res225, res6: res226, res7: res227, otro: res228});
+
+
+
+
 		poll.final = req.body.final;
 
-
-
+		
 		//console.log(poll);
 		if(req.body.parroquia == null || req.body.zona == null || req.body.sector == null || req.body.comunidad == null){
 			res.send('Asegurate de proveer los datos');
