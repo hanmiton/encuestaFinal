@@ -8,7 +8,7 @@ module.exports = function(router){
 		
 		var poll = new Poll();
 /*primera parte 1 - 10 */
-/*
+
 		poll.parroquia = req.body.parroquia;
 
 		//sector
@@ -72,10 +72,7 @@ module.exports = function(router){
 		//pregunta 10
 		poll.res10 = req.body.res10;
 
-*/
-
-
-/* pregunta 11- 12
+ //pregunta 11- 12
 		//pregunta 11
 		poll.res11 = req.body.res11;
 
@@ -85,9 +82,9 @@ module.exports = function(router){
 		res123 = req.body.res12[0].res3;
 		poll.res12.push({res1: res121, res2: res122, res3: res123});
 
-/*
 
-/* pregunta 11- 12
+
+/* pregunta 11- 12*/
 
 		//pregunta 13
 		poll.res13 = req.body.res13;
@@ -97,9 +94,9 @@ module.exports = function(router){
 		res142 = req.body.res14[0].res2;
 		res143 = req.body.res14[0].res3;
 		poll.res14.push({res1: res141, res2: res142, res3: res143});
-*/
 
-/* pregunta 15-16 
+
+/* pregunta 15-16 */
 
 		//pregunta 15
 		poll.res15 = req.body.res15;
@@ -109,8 +106,8 @@ module.exports = function(router){
 		res162 = req.body.res16[0].res2;
 		res163 = req.body.res16[0].res3;
 		poll.res16.push({res1: res161, res2: res162, res3: res163});
-*/
-/* pregunta 17-21
+
+/* pregunta 17-21 */
 		//pregunta 17
 		poll.res17 = req.body.res17;
 
@@ -157,8 +154,7 @@ module.exports = function(router){
 		poll.res21.push({patri: res214, per: per214, id: id214});
 		poll.res21.push({patri: res215, per: per215, id: id215});
 		poll.res21.push({patri: res216, per: per216, id: id216});
-		*/
-	
+		
 		//pregunta 22
 		res221 = req.body.res22[0].res1;
 		res222 = req.body.res22[0].res2;
@@ -172,7 +168,45 @@ module.exports = function(router){
 		poll.res22.push({res1: res221, res2: res222, res3: res223, res4: res224,  res5: res225, res6: res226, res7: res227, otro: res228});
 
 
+		//pregunta 23
+		res231 = req.body.res23[0].res1;
+		res232 = req.body.res23[0].res2;
+		res233 = req.body.res23[0].res3;
+		res234 = req.body.res23[0].res4;
+		res235 = req.body.res23[0].res5;
+		res236 = req.body.res23[0].res6;
+		res237 = req.body.res23[0].otro;
+		poll.res23.push({res1: res231, res2: res232, res3: res233, res4: res234,  res5: res235, res6: res236, otro: res237});
 
+		//pregunta 24
+		poll.res24 = req.body.res24;
+
+		//pregunta 25
+		poll.res25 = req.body.res25;
+
+		
+
+		//pregunta 26
+		res261 = req.body.res26[0].res1;
+		res262 = req.body.res26[0].res2;
+		res263 = req.body.res26[0].res3;
+		res264 = req.body.res26[0].res4;
+		
+		poll.res26.push({res1: res261, res2: res262, res3: res263, res4: res264});
+
+
+		//pregunta 27
+		res271 = req.body.res27[0].res1;
+		res272 = req.body.res27[0].res2;
+		res273 = req.body.res27[0].res3;
+		res274 = req.body.res27[0].res4;
+		poll.res27.push({res1: res271, res2: res272, res3: res273, res4: res274});
+
+		//pregunta 28
+		poll.res28 = req.body.res28;
+
+		//pregunta 29
+		poll.res29 = req.body.res29;
 
 		poll.final = req.body.final;
 

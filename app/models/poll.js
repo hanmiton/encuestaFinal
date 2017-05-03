@@ -10,7 +10,7 @@ var numSchema = new mongoose.Schema({
 var dirSchema = new mongoose.Schema({ 
 	dir1: { type: String },
 	dir2: { type: String }
-	
+
 });
 
 var perSchema = new mongoose.Schema({ 
@@ -56,6 +56,36 @@ var ressub22Schema = new mongoose.Schema({
 	otro: { type: String }
 });
 
+// pregunta 23
+var ressub23Schema = new mongoose.Schema({ 
+	res1: { type: Number },
+	res2: { type: Number },
+	res3: { type: Number },
+	res4: { type: Number },
+	res5: { type: Number },
+	res6: { type: Number },
+	otro: { type: Number }
+});
+
+// pregunta 26
+var ressub26Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean }
+});
+
+// pregunta 27
+var ressub27Schema = new mongoose.Schema({ 
+	res1: { type: Number },
+	res2: { type: Number },
+	res3: { type: Number },
+	res4: { type: Number }
+});
+
+
+
+
 // Document schema for polls
 var PollSchema = new mongoose.Schema({
 	parroquia: { type: String },
@@ -78,6 +108,13 @@ var PollSchema = new mongoose.Schema({
 	res20: [ressubSchema],
 	res21: [respatriSchema],
 	res22: [ressub22Schema],
+	res23: [ressub23Schema],
+	res24: String,
+	res25: String,
+	res26: [ressub22Schema],
+	res27: [ressub23Schema],
+	res28: String,
+	res29: String,
 	final: { type: String }
 });
 

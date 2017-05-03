@@ -35,10 +35,9 @@
           <li>Zona</li>
           <li>Sector</li>
         </ul>
-  <!--Datos iniciales-->
-  <!-- 1-10-->
+     
         <fieldset>
-
+        <div> pregutna 1-10 </div>
           <h2 class="fs-title">Parroquia</h2>
           <input type="text" name="parroquia" ng-model="poll.parroquia"  placeholder="Parroquia"/>
           <input type="button" name="next" class="next action-button" value="Next" />
@@ -164,6 +163,7 @@
 
       
         <fieldset>
+        <div> pregutna 11-12 </div>
           <h2 class="fs-title">¿Conoce que Cayambe tiene abundante patrimonio cultural?</h2>
           <br>
           <div class="funkyradio">
@@ -184,9 +184,9 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
    
-    -->
+    
 
-    <!--pregutna 11-12-->
+    
         <fieldset>
           <h2 class="fs-title">¿Conoce sitios arqueológicos en Cayambe ?</h2>
           <br>
@@ -210,19 +210,17 @@
           <input ng-model= "poll.res12[0].res1" type="text" placeholder="Especifique"/>
           <input ng-model= "poll.res12[0].res2" type="text" placeholder="Especifique"/>
           <input ng-model= "poll.res12[0].res3" type="text" placeholder="Especifique"/>
-          <!--
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-          -->
           </div>
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
        
         </fieldset>
-        -->
-      <!--pregutna 13-14-->
+        
+
+      
         <fieldset>
+        <div>pregutna 13-14</div>
           <h2 class="fs-title">¿Conoce sitios sagrados en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -248,10 +246,11 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-        -->
-<!--15-16 -->
+        
+        
 
         <fieldset>
+        <div> pregunta 15-16</div> 
           <h2 class="fs-title">¿Conoce edificios o inmuebles patrimoniales en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -277,11 +276,12 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
--->
 
-<!--pregunta 17-21-->
+
+
 
         <fieldset>
+        <div>pregunta 17-21</div>
           <h2 class="fs-title">¿Conoce leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -379,10 +379,11 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset> 
-        
+       
 
-<!--pregunta22-->
+ 
         <fieldset>
+        <div>pregunta 22-25 </div>
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales conoce ?</h2>
           <p>{{bienes.opciones[0].name}}</p>
           <br>
@@ -534,8 +535,6 @@
            <div ng-show="poll.res22[0].res7">
             <h2 class="fs-title">¿Cuántas veces, el año 2016, ha visitado {{poll.res22[0].otro}} ?</h2>
             <input ng-model="poll.res23[0].otro" type="number" value="0">
-          
-
           </div>
 
 
@@ -575,11 +574,13 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model="poll.res24" type="radio" name="preg24" id="ch34" value= "9" />
+                  <input ng-click="poll.res24 = 9" ng-model="poll.res24" type="radio" name="preg24" id="ch34" value= "9" />
                   <label for="ch34">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          <input ng-show= "poll.res24 == 9 " ng-model="poll.res24" type="text" placeholder="Especifique"/>
+          
            </div>
           <div ng-show="!poll.res22[0].res1 && !poll.res22[0].res2 && !poll.res22[0].res3 && !poll.res22[0].res4 && !poll.res22[0].res5 && !poll.res22[0].res6 && !poll.res22[0].res7">
          
@@ -587,7 +588,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model="poll.res25" type="radio" name="preg25" id="ch35" value= "1" />
+                  <input ng-click="poll.res25 = 9" ng-model="poll.res25" type="radio" name="preg25" id="ch35" value= "1" />
                   <label for="ch35">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo conoce&nbsp&nbsp</label>
               </div>
           </div>
@@ -595,7 +596,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch36" value= "1" />
+                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch36" value= "2" />
                   <label for="ch36">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay informacion&nbsp&nbsp</label>
               </div>
           </div>
@@ -603,7 +604,7 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch37" value= "1" />
+                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch37" value= "3" />
                   <label for="ch37">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
@@ -611,19 +612,19 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch38" value= "1" />
+                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch38" value= "4" />
                   <label for="ch38">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtrohay medios para llegar&nbsp&nbsp</label>
               </div>
           </div>
           <br>
             <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input  ng-model="poll.res25" type="radio" name="preg25" id="ch39" value= "1" />
+                  <input  ng-click="poll.res25 == 9" ng-model="poll.res25" type="radio" name="preg25" id="ch39" value= "9" />
                   <label for="ch39">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res25 == 9 " ng-model="poll.res25" type="text" placeholder="Especifique"/>
           </div>
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -632,174 +633,190 @@
 
 
 
+
     <fieldset>
+    <div>pregunta 26-29</div> 
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales inmuebles conoce?</h2>
           <p>{{inmuebles.opciones[0].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res1" ng-click="poll.res26[0].res1 = 1" type="radio" name="preg261" id="ch40" value= "1" />
+                  <label for="ch40">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res1" ng-click="poll.res26[0].res1 = 0" type="radio" name="preg261" id="ch41" value= "0" />
+                  <label for="ch41">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          <div ng-show="poll.res26[0].res1">
+           <h2 class="fs-title">¿Cuántas veces ha visitado los siguientes sitios patrimoniales {{inmuebles.opciones[0].name}}?</h2>
+          <input ng-model="poll.res27[0].res1" type="number" value="0">
+          </div>
+           
+
           <p>{{inmuebles.opciones[1].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res2" ng-click="poll.res26[0].res2 = 1" type="radio" name="preg262" id="ch42" value= "1" />
+                  <label for="ch42">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res2" ng-click="poll.res26[0].res2 = 0" type="radio" name="preg262" id="ch43" value= "0" />
+                  <label for="ch43">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+
+          <div ng-show="poll.res26[0].res2">
+            <h2 class="fs-title">¿Cuántas veces, el año 2016, ha visitado {{inmuebles.opciones[1].name}} ?</h2>
+          <input ng-model="poll.res27[0].res2" type="number" value="0">
+          </div>
+          
           <p>{{inmuebles.opciones[2].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res3" ng-click="poll.res26[0].res3 = 1" type="radio" name="preg263" id="ch44" value= "1" />
+                  <label for="ch44">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res3" ng-click="poll.res26[0].res3 = 0" type="radio" name="preg263" id="ch45" value= "0" />
+                  <label for="ch45">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+
+          <div ng-show="poll.res26[0].res3">
+            <h2 class="fs-title">¿Cuántas veces, el año 2016, ha visitado {{inmuebles.opciones[2].name}} ?</h2>
+          <input ng-model="poll.res27[0].res3" type="number" value="0">
+          </div>
+
           <p>{{inmuebles.opciones[3].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res4" ng-click="poll.res26[0].res4 = 1" type="radio" name="preg264" id="ch46" value= "1" />
+                  <label for="ch46">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res26[0].res4" ng-click="poll.res26[0].res4 = 0" type="radio" name="preg264" id="ch47" value= "0" />
+                  <label for="ch47">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
+
+          <div ng-show="poll.res26[0].res4">
+            <h2 class="fs-title">¿Cuántas veces, el año 2016, ha visitado {{inmuebles.opciones[3].name}} ?</h2>
+          <input ng-model="poll.res27[0].res4" type="number" value="0">
+          </div>
 
 
-        <fieldset>
-          <h2 class="fs-title">¿Cuántas veces ha visitado los siguientes sitios patrimoniales ?</h2>
-          <p>{{inmuebles.opciones[0].name}}</p>
-          <input type="number" value="0">
-          <p>{{inmuebles.opciones[1].name}}</p>
-          <input type="number" value="0"> 
-          <p>{{inmuebles.opciones[2].name}}</p>
-          <input type="number" value="0">
-          <p>{{inmuebles.opciones[3].name}}</p>
-          <input type="number" value="0">
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
 
 
-   
-      <fieldset>
-          <h2 class="fs-title">¿Por qué razón visitó los bienes ?</h2>
+          <div ng-show="poll.res26[0].res1 || poll.res26[0].res2 || poll.res26[0].res3 || poll.res26[0].res4" >
+            <h2 class="fs-title">¿Por qué razón visitó los bienes ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTurismo&nbsp&nbsp</label>
+                  <input ng-model="poll.res28" type="radio" name="preg28" id="ch48" value= "1" />
+                  <label for="ch48">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTurismo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEducativa&nbsp&nbsp</label>
+                  <input ng-model="poll.res28" type="radio" name="preg28" id="ch49" value= "2" />
+                  <label for="ch49">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEducativa&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCelebración&nbsp&nbsp</label>
+                  <input ng-model="poll.res28" type="radio" name="preg28" id="ch50" value= "3" />
+                  <label for="ch50">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCelebración&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
+                  <input ng-model="poll.res28" type="radio" name="preg28" id="ch51" value= "9" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res28 == 9 " ng-model="poll.res28" type="text" placeholder="Especifique"/>
+          
+          </div>
+
+
+
+          <div ng-show="!poll.res26[0].res1 && !poll.res26[0].res2 && !poll.res26[0].res3 && !poll.res26[0].res4 ">
+         
+            <h2 class="fs-title">¿Por qué no visitó ?</h2>
+          <br>
+          <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input ng-click="poll.res29 = 9" ng-model="poll.res29" type="radio" name="preg29" id="ch52" value= "1" />
+                  <label for="ch52">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo conoce&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input  ng-model="poll.res29" type="radio" name="preg29" id="ch53" value= "2" />
+                  <label for="ch53">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay informacion&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input  ng-model="poll.res29" type="radio" name="preg29" id="ch54" value= "3" />
+                  <label for="ch54">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay medios para llegar&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input  ng-model="poll.res29" type="radio" name="preg29" id="ch55" value= "4" />
+                  <label for="ch55">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtrohay medios para llegar&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+            <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input  ng-click="poll.res29 == 9" ng-model="poll.res29" type="radio" name="preg29" id="ch56" value= "9" />
+                  <label for="ch56">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+          <input ng-show= "poll.res29 == 9 " ng-model="poll.res29" type="text" placeholder="Especifique"/>
+          </div>
+
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-
-  
-
-        <fieldset>
-          <h2 class="fs-title">¿Por qué no visitó ?</h2>
-          <br>
-          <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo conoce&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
-          <br>
-          <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay informacion&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
-          <br>
-          <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo hay medios para llegar&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
-          <br>
-          <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtrohay medios para llegar&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
-          <input type="text" placeholder="Especifique"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-      
-
->
- 
+-->
+<!--
+  <div>pregunta 30</div>
         <fieldset>
           <h2 class="fs-title">¿ En cuál celebración participa ?</h2>
           <p>{{celebraciones.opciones[0].name}}</p>
