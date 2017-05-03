@@ -941,22 +941,23 @@
 -->
 
 
-<!--
+
         <fieldset>
+        <div>pregunta 31</div>
           <h2 class="fs-title">Cuándo presenta síntomas de enfermedad, a quien acude: </h2>
           <p>{{medicinas.opciones[0].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input  ng-model="poll.res31[0].res1" type="radio" name="preg311" id="ch72" value= "1" />
+                  <label for="ch72">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input  ng-model="poll.res31[0].res1" type="radio" name="preg311" id="ch73" value= "0" />
+                  <label for="ch73">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -964,15 +965,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res31[0].res2" type="radio" name="preg312" id="ch74" value= "1" />
+                  <label for="ch74">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res31[0].res2" type="radio" name="preg312" id="ch75" value= "0" />
+                  <label for="ch75">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -980,15 +981,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model="poll.res31[0].res3" type="radio" name="preg313" id="ch76" value= "1" />
+                  <label for="ch76">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model="poll.res31[0].res3" type="radio" name="preg313" id="ch77" value= "0" />
+                  <label for="ch77">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -997,7 +998,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
- 
+<!-- 
   
      <fieldset>
           <h2 class="fs-title">¿ Conoce que en Cayambe atraviesa la línea equinoccial (Latitud 0" 0´) ?</h2>

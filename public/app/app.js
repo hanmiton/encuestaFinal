@@ -425,6 +425,11 @@ angular.module('pollApp',['appRoutes'])
       res5: '',
       res6: '',
       res7: ''
+    }],
+    res31: [{
+      res1: '',
+      res2: '',
+      res3: ''
     }]
 	};
 

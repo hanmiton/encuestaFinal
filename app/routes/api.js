@@ -216,6 +216,12 @@ module.exports = function(router){
 		res307 = req.body.res30[0].res7;
 		poll.res30.push({res1: res301, res2: res302, res3: res303, res4: res304,res5: res305,res6: res306,res7: res307});
 
+		//pregunta 31
+		res311 = req.body.res31[0].res1;
+		res312 = req.body.res31[0].res2;
+		res313 = req.body.res31[0].res3;
+		poll.res31.push({res1: res311, res2: res312, res3: res313});
+
 		poll.final = req.body.final;
 
 		
