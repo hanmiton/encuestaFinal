@@ -8,7 +8,7 @@ module.exports = function(router){
 		
 		var poll = new Poll();
 /*primera parte 1 - 10 */
-/*
+
 		poll.parroquia = req.body.parroquia;
 
 		//sector
@@ -376,7 +376,7 @@ module.exports = function(router){
 		poll.res60 = req.body.res60;
 		poll.res61 = req.body.res61;
 		poll.res62 = req.body.res62;
-*/	
+
 
 		res631 = req.body.res63[0].res1;
 		res632 = req.body.res63[0].res2;
