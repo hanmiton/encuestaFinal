@@ -8,7 +8,7 @@ module.exports = function(router){
 		
 		var poll = new Poll();
 /*primera parte 1 - 10 */
-
+/*
 		poll.parroquia = req.body.parroquia;
 
 		//sector
@@ -344,8 +344,50 @@ module.exports = function(router){
 		poll.res51 = req.body.res51;
 		poll.res52 = req.body.res52;
 
-		poll.final = req.body.final;
+		poll.res53 = req.body.res53;
+		poll.res54 = req.body.res54;
+		poll.res55 = req.body.res55;
 
+
+		//pregunta 38
+		res561 = req.body.res56[0].res1;
+		res562 = req.body.res56[0].res2;
+		res563 = req.body.res56[0].res3;
+		poll.res56.push({res1: res561, res2: res562, res3: res563});
+
+
+		poll.res57 = req.body.res57;
+		poll.res58 = req.body.res58;
+
+		res591 = req.body.res59[0].res1;
+		res592 = req.body.res59[0].res2;
+		res593 = req.body.res59[0].res3;
+		res594 = req.body.res59[0].res4;
+		res595 = req.body.res59[0].res5;
+		res596 = req.body.res59[0].res6;
+		res597 = req.body.res59[0].res7;
+		res598 = req.body.res59[0].res8;
+		res599 = req.body.res59[0].res9;
+		res5910 = req.body.res59[0].res10;
+		res5911 = req.body.res59[0].res11;
+		poll.res59.push({res1: res591, res2: res592, res3: res593, res4: res594, res5: res595, res6: res596, res7: res597, res8: res598, res9: res599, res10: res5910, res11: res5911});
+
+
+		poll.res60 = req.body.res60;
+		poll.res61 = req.body.res61;
+		poll.res62 = req.body.res62;
+*/	
+
+		res631 = req.body.res63[0].res1;
+		res632 = req.body.res63[0].res2;
+		res633 = req.body.res63[0].res3;
+		res634 = req.body.res63[0].res4;
+		res635 = req.body.res63[0].res5;
+		poll.res63.push({res1: res631, res2: res632, res3: res633, res4: res634, res5: res635});
+
+		poll.res64 = req.body.res64;
+
+	
 		
 		//console.log(poll);
 		if(req.body.parroquia == null || req.body.zona == null || req.body.sector == null || req.body.comunidad == null){

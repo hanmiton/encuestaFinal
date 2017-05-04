@@ -206,6 +206,30 @@ var ressub49Schema = new mongoose.Schema({
 	res8: { type: Boolean }
 });
 
+// pregunta 59
+var ressub59Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean },
+	res6: { type: Boolean },
+	res7: { type: Boolean },
+	res8: { type: Boolean },
+	res9: { type: Boolean },
+	res10: { type: Boolean },
+	res11: { type: Boolean }
+});
+
+// pregunta 63
+var ressub63Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean }
+});
+
 // Document schema for polls
 var PollSchema = new mongoose.Schema({
 	parroquia: { type: String },
@@ -258,7 +282,18 @@ var PollSchema = new mongoose.Schema({
 	res50: Boolean,
 	res51: Boolean,
 	res52: Boolean,
-	final: { type: String }
+	res53: Boolean,
+	res54: Number,
+	res55: Boolean,
+	res56: [ressubSchema],
+	res57: Number,
+	res58: Number,
+	res59: [ressub59Schema],
+	res60: Boolean,
+	res61: Boolean,
+	res62: Number,
+	res63: [ressub63Schema],
+	res64: Number
 });
 
 module.exports = mongoose.model('Poll', PollSchema)

@@ -35,7 +35,7 @@
           <li>Zona</li>
           <li>Sector</li>
         </ul>
- 
+ <!--
         <fieldset>
         <div> pregutna 1-10 </div>
           <h2 class="fs-title">Parroquia</h2>
@@ -1623,7 +1623,7 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
--->
+
  
         <fieldset>
         <div>pregunta 45 - 52</div>
@@ -2232,7 +2232,7 @@
 
 
 
->
+
 
         <fieldset>
           <h2 class="fs-title">Documentos de más de 30 años: </h2>
@@ -2416,7 +2416,7 @@
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input ng-model= "poll.res53" type="radio" name="preg52" id="ch234" value= "0" />
+                  <input ng-model= "poll.res52" type="radio" name="preg52" id="ch234" value= "0" />
                   <label for="ch234">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
@@ -2426,80 +2426,76 @@
         </fieldset>
 
 
-<!--
      <fieldset>
+          <div>pregunta 53 - 55</div>
           <h2 class="fs-title">¿Estaría dispuesto a que sus bienes puedan ser exhibidos ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res53" type="radio" name="preg53" id="ch235" value= "1" />
+                  <label for="ch235">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res53" type="radio" name="preg53" id="ch236" value= "0" />
+                  <label for="ch236">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
 
 
-  
-      <fieldset>
-          <h2 class="fs-title">Con qué temporalidad estaría dispuesto a que sean exhibidos:</h2>
+          <div ng-show= "poll.res53">
+            <h2 class="fs-title">Con qué temporalidad estaría dispuesto a que sean exhibidos:</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[0].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res54" type="radio" name="preg54" id="ch237" value= "0" />
+                  <label for="ch237">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[1].name}}nbsp&nbsp</label>
+                  <input ng-model= "poll.res54" type="radio" name="preg54" id="ch238" value= "1" />
+                  <label for="ch238">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[1].name}}nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg227" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[2].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res54" type="radio" name="preg54" id="ch239" value= "2" />
+                  <label for="ch239">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{formas.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
            <br>
           <br>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-
-  
+          </div>
 
 
-     <fieldset>
-          <h2 class="fs-title">¿Estaría dispuesto a exhibir en su vivienda, ya se para turistas o visitantes?</h2>
+
+
+          <div  ng-show= "poll.res53">
+            <h2 class="fs-title">¿Estaría dispuesto a exhibir en su vivienda, ya se para turistas o visitantes?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res55" type="radio" name="preg55" id="ch240" value= "1" />
+                  <label for="ch240">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res55" type="radio" name="preg55" id="ch241" value= "0" />
+                  <label for="ch241">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
+          </div>
+
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -2508,43 +2504,45 @@
 
         <fieldset>
           <h2 class="fs-title">Señale en orden de importancia, los tres principales bienes patrimoniales de Cayambe que se deben proteger:</h2>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res56[0].res1"  type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res56[0].res2" type="text" placeholder="Especifique"/>
+          <input ng-model= "poll.res56[0].res3" type="text" placeholder="Especifique"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
      
 
+
       <fieldset>
+          <div>pregunta 57-58</div>
           <h2 class="fs-title">¿ Cuál institución en Cayambe debe conservar, preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[0].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch242" value= "1" />
+                  <label for="ch242">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[1].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch243" value= "2" />
+                  <label for="ch243">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[2].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch244" value= "3" />
+                  <label for="ch244">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch245" value= "4" />
                   <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
@@ -2552,23 +2550,23 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[4].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch246" value= "5" />
+                  <label for="ch246">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[4].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[5].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch247" value= "6" />
+                  <label for="ch247">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{instituciones.opciones[5].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
+                  <input ng-model= "poll.res57" type="radio" name="preg57" id="ch248" value= "9" />
                   <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
@@ -2578,70 +2576,68 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
     
-
-  
 
       <fieldset>
           <h2 class="fs-title">¿ Cuál organización en su barrio o cumindad, debe ser responsable de la gestión de la cultura y del patrimonio cultural ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[0].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch249" value= "1" />
+                  <label for="ch249">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[1].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch250" value= "2" />
+                  <label for="ch250">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[2].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch251" value= "3" />
+                  <label for="ch251">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[3].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch252" value= "4" />
+                  <label for="ch252">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[4].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch253" value= "5" />
+                  <label for="ch253">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[4].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[5].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch254" value= "6" />
+                  <label for="ch254">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[5].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[6].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch255" value= "7" />
+                  <label for="ch255">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organizaciones.opciones[6].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
+                  <input ng-model= "poll.res58" type="radio" name="preg58" id="ch256" value= "9" />
+                  <label for="ch256">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2649,25 +2645,25 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-    
+   
 
->
 
         <fieldset>
+        <div>pregunta 59</div>
           <h2 class="fs-title"> El Municipio tiene dichas competencias. ¿Cuáles facultades conoce usted que tiene el GAD, respecto al patrimonio cultural ? </h2>
           <p>{{competencias.opciones[0].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res1" type="radio" name="preg591" id="ch257" value= "1" />
+                  <label for="ch257">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res1" type="radio" name="preg591" id="ch258" value= "0" />
+                  <label for="ch258">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2675,15 +2671,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res2" type="radio" name="preg592" id="ch259" value= "1" />
+                  <label for="ch259">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res2" type="radio" name="preg592" id="ch2591" value= "0" />
+                  <label for="ch2591">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2691,15 +2687,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res3" type="radio" name="preg593" id="ch260" value= "1" />
+                  <label for="ch260">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res3" type="radio" name="preg593" id="ch261" value= "0" />
+                  <label for="ch261">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2707,15 +2703,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res4" type="radio" name="preg594" id="ch262" value= "1" />
+                  <label for="ch262">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res4" type="radio" name="preg594" id="ch263" value= "0" />
+                  <label for="ch263">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2723,15 +2719,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res5" type="radio" name="preg595" id="ch264" value= "1" />
+                  <label for="ch264">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res5" type="radio" name="preg595" id="ch265" value= "0" />
+                  <label for="ch265">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2741,8 +2737,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res6" type="radio" name="preg596" id="ch266" value= "1" />
+                  <label for="ch266">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2750,8 +2746,8 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res6" type="radio" name="preg596" id="ch267" value= "0" />
+                  <label for="ch267">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2759,8 +2755,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res7" type="radio" name="preg597" id="ch268" value= "1" />
+                  <label for="ch268">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2768,8 +2764,8 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res7" type="radio" name="preg597" id="ch269" value= "0" />
+                  <label for="ch269">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
 
@@ -2778,8 +2774,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res8" type="radio" name="preg598" id="ch270" value= "1" />
+                  <label for="ch270">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2787,8 +2783,8 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res8" type="radio" name="preg598" id="ch271" value= "0" />
+                  <label for="ch271">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
 
@@ -2797,8 +2793,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res9" type="radio" name="preg599" id="ch279" value= "1" />
+                  <label for="ch279">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2806,8 +2802,8 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res9" type="radio" name="preg599" id="ch280" value= "0" />
+                  <label for="ch280">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
 
@@ -2816,8 +2812,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res10" type="radio" name="preg5910" id="ch281" value= "1" />
+                  <label for="ch281">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2825,8 +2821,8 @@
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res10" type="radio" name="preg5910" id="ch282" value= "0" />
+                  <label for="ch282">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
 
@@ -2835,40 +2831,18 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res11" type="radio" name="preg5911" id="ch283" value= "1" />
+                  <label for="ch283">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg225" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res59[0].res11" type="radio" name="preg5911" id="ch284" value= "0" />
+                  <label for="ch284">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
-          <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-
-
-     <fieldset>
-          <h2 class="fs-title">¿Conoce que el Municipio, para el cumplimiento de las competencias y facultades, cuenta con una jefatura compuesta por dos servidores públicos?</h2>
-          <br>
-          <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
-           <div class="funkyradio">
-              <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
-              </div>
-          </div>
-          <br>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -2876,25 +2850,27 @@
 
 
      <fieldset>
+          <div>pregunta 60-61</div>
           <h2 class="fs-title">¿Conoce que el Municipio, para el cumplimiento de las competencias y facultades, cuenta con una jefatura compuesta por dos servidores públicos?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res60" type="radio" name="preg60" id="ch285" value= "1" />
+                  <label for="ch285">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res60" type="radio" name="preg60" id="ch286" value= "0" />
+                  <label for="ch286">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+
 
 
      <fieldset>
@@ -2902,15 +2878,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res61" type="radio" name="preg61" id="ch287" value= "1" />
+                  <label for="ch287">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg17" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res61" type="radio" name="preg61" id="ch288" value= "0" />
+                  <label for="ch288">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2925,30 +2901,30 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[0].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res62" type="radio" name="preg62" id="ch289" value= "1" />
+                  <label for="ch289">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[0].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[1].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res62" type="radio" name="preg62" id="ch290" value= "2" />
+                  <label for="ch290">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[1].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[2].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res62" type="radio" name="preg62" id="ch291" value= "3" />
+                  <label for="ch291">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[2].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[3].name}}&nbsp&nbsp</label>
+                  <input ng-model= "poll.res62" type="radio" name="preg62" id="ch292" value= "4" />
+                  <label for="ch292">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{{organismos.opciones[3].name}}&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2956,8 +2932,8 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg24" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
+                  <input ng-model= "poll.res62" type="radio" name="preg62" id="ch293" value= "5" />
+                  <label for="ch293">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2965,26 +2941,27 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
-   
+ -->  
 
 
->
+
 
         <fieldset>
+          <div>pregunta 63</div>
           <h2 class="fs-title">A fin de preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines, de qué forma se debería financiar:</h2>
           <p>{{contribuciones.opciones[0].name}}</p>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res1" type="radio" name="preg631" id="ch294" value= "1" />
+                  <label for="ch294">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg221" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res1" type="radio" name="preg631" id="ch295" value= "0" />
+                  <label for="ch295">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -2992,15 +2969,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res2" type="radio" name="preg632" id="ch296" value= "1" />
+                  <label for="ch296">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg222" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res2" type="radio" name="preg632" id="ch297" value= "0" />
+                  <label for="ch297">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -3008,15 +2985,15 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res3" type="radio" name="preg633" id="ch298" value= "1" />
+                  <label for="ch298">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg223" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res3" type="radio" name="preg633" id="ch299" value= "0" />
+                  <label for="ch299">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
           <br>
@@ -3024,15 +3001,31 @@
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch7" value= "1" />
-                  <label for="ch1">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res4" type="radio" name="preg634" id="ch300" value= "1" />
+                  <label for="ch300">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
               </div>
           </div>
           <br>
            <div class="funkyradio">
               <div class="funkyradio-success">
-                  <input type="radio" name="preg224" id="ch8" value= "0" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+                  <input ng-model= "poll.res63[0].res4" type="radio" name="preg634" id="ch301" value= "0" />
+                  <label for="ch301">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
+              </div>
+          </div>
+           <br>
+          <p>OTRO</p>
+          <br>
+          <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input ng-model= "poll.res63[0].res5" type="radio" name="preg635" id="ch302" value= "1" />
+                  <label for="ch302">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSi&nbsp&nbsp</label>
+              </div>
+          </div>
+          <br>
+           <div class="funkyradio">
+              <div class="funkyradio-success">
+                  <input ng-model= "poll.res63[0].res5" type="radio" name="preg635" id="ch303" value= "0" />
+                  <label for="ch303">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
          
@@ -3040,10 +3033,10 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
--->
+
         <fieldset>
-          <h2 class="fs-title">¿Cuánto sería el valor anual que usted estaría dispuesto a contribuir?</h2>
-          <input type="text" name="final" ng-model="regData.final" placeholder="Final"/>
+          <h2 class="fs-title">¿Cuánto sería el valor por mes que usted estaría dispuesto a contribuir?</h2>
+          <input type="text" name="res64" ng-model="regData.res64" placeholder="res64"/>
            <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>
