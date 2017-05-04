@@ -101,6 +101,48 @@ var ressub31Schema = new mongoose.Schema({
 	res3: { type: Boolean }
 });
 
+// pregunta 37
+var ressub37Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean },
+	res6: { type: Boolean }
+});
+
+// pregunta 38
+var ressub38Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean }
+});
+
+// pregunta 39
+var ressub39Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean },
+	res6: { type: Boolean },
+	res7: { type: Boolean },
+	res8: { type: Boolean },
+	res9: { type: Boolean },
+	res10: { type: Boolean },
+	res11: { type: Boolean }
+});
+
+// pregunta 40
+var ressub40Schema = new mongoose.Schema({ 
+	res1: { type: Boolean },
+	res2: { type: Boolean },
+	res3: { type: Boolean },
+	res4: { type: Boolean },
+	res5: { type: Boolean },
+	res6: { type: Boolean }
+});
 
 
 // Document schema for polls
@@ -139,7 +181,14 @@ var PollSchema = new mongoose.Schema({
 	res34: Boolean,
 	res35: [ressubSchema],
 	res36: [ressubSchema],
-	
+	res37: [ressub37Schema],
+	res38: [ressub38Schema],
+	res39: [ressub39Schema],
+	res40: [ressub40Schema],
+	res41: Number,
+	res42: Boolean,
+	res43: Boolean,
+	res44: Boolean,
 	final: { type: String }
 });
 

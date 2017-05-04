@@ -238,7 +238,52 @@ module.exports = function(router){
 		res362 = req.body.res36[0].res2;
 		res363 = req.body.res36[0].res3;
 		poll.res36.push({res1: res361, res2: res362, res3: res363});
+		
+	//pregunta 37
+		res371 = req.body.res37[0].res1;
+		res372 = req.body.res37[0].res2;
+		res373 = req.body.res37[0].res3;
+		res374 = req.body.res37[0].res4;
+		res375 = req.body.res37[0].res5;
+		res376 = req.body.res37[0].res6;
+		poll.res37.push({res1: res371, res2: res372, res3: res373, res4: res374, res5: res375, res6: res376});
 
+		//pregunta 38
+		res381 = req.body.res38[0].res1;
+		res382 = req.body.res38[0].res2;
+		res383 = req.body.res38[0].res3;
+		res384 = req.body.res38[0].res4;
+		poll.res38.push({res1: res381, res2: res382, res3: res383, res4: res384});
+
+		//pregunta 39
+		res391 = req.body.res39[0].res1;
+		res392 = req.body.res39[0].res2;
+		res393 = req.body.res39[0].res3;
+		res394 = req.body.res39[0].res4;
+		res395 = req.body.res39[0].res5;
+		res396 = req.body.res39[0].res6;
+		res397 = req.body.res39[0].res7;
+		res398 = req.body.res39[0].res8;
+		res399 = req.body.res39[0].res9;
+		res3910 = req.body.res39[0].res10;
+		res3911 = req.body.res39[0].res11;
+		poll.res39.push({res1: res391, res2: res392, res3: res393, res4: res394, res5: res395, res6: res396
+				, res7: res397, res8: res398, res9: res399, res10: res3910, res11: res3911		});
+
+		//pregunta 40
+
+		res401 = req.body.res40[0].res1;
+		res402 = req.body.res40[0].res2;
+		res403 = req.body.res40[0].res3;
+		res404 = req.body.res40[0].res4;
+		res405 = req.body.res40[0].res5;
+		res406 = req.body.res40[0].res6;
+		poll.res40.push({res1: res401, res2: res402, res3: res403, res4: res404, res5: res405, res6: res406});
+
+		poll.res41 = req.body.res41;
+		poll.res42 = req.body.res42;
+		poll.res43 = req.body.res43;
+		poll.res44 = req.body.res44;
 		poll.final = req.body.final;
 
 		
