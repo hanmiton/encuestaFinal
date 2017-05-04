@@ -284,6 +284,66 @@ module.exports = function(router){
 		poll.res42 = req.body.res42;
 		poll.res43 = req.body.res43;
 		poll.res44 = req.body.res44;
+
+		res451 = req.body.res45[0].res1;
+		res452 = req.body.res45[0].res2;
+		res453 = req.body.res45[0].res3;
+		res454 = req.body.res45[0].res4;
+		res455 = req.body.res45[0].res5;
+		res456 = req.body.res45[0].res6;
+		res457 = req.body.res45[0].res7;
+		res458 = req.body.res45[0].res8;
+		res459 = req.body.res45[0].res9;
+		res4510 = req.body.res45[0].res10;
+		
+		poll.res45.push({res1: res451, res2: res452, res3: res453, res4: res454, res5: res455, res6: res456, res7: res457, res8: res458, res9: res459, res10: res4510});
+
+
+		res461 = req.body.res46[0].res1;
+		res462 = req.body.res46[0].res2;
+		res463 = req.body.res46[0].res3;
+		res464 = req.body.res46[0].res4;
+		res465 = req.body.res46[0].res5;
+		res466 = req.body.res46[0].res6;
+		res467 = req.body.res46[0].res7;
+		res468 = req.body.res46[0].res8;
+		res469 = req.body.res46[0].res9;
+		res4610 = req.body.res46[0].res10;
+		res4611 = req.body.res46[0].res11;
+		poll.res46.push({res1: res461, res2: res462, res3: res463, res4: res464, res5: res465, res6: res466, res7: res467, res8: res468, res9: res469, res10: res4610, res11: res4611});
+
+		res471 = req.body.res47[0].res1;
+		res472 = req.body.res47[0].res2;
+		res473 = req.body.res47[0].res3;
+		res474 = req.body.res47[0].res4;
+		res475 = req.body.res47[0].res5;
+		res476 = req.body.res47[0].res6;
+		res477 = req.body.res47[0].res7;
+		poll.res47.push({res1: res471, res2: res472, res3: res473, res4: res474, res5: res475, res6: res476, res7: res477});
+
+		res481 = req.body.res48[0].res1;
+		res482 = req.body.res48[0].res2;
+		res483 = req.body.res48[0].res3;
+		res484 = req.body.res48[0].res4;
+		res485 = req.body.res48[0].res5;
+		res486 = req.body.res48[0].res6;
+		poll.res48.push({res1: res481, res2: res482, res3: res483, res4: res484, res5: res485, res6: res486});
+
+
+		res491 = req.body.res49[0].res1;
+		res492 = req.body.res49[0].res2;
+		res493 = req.body.res49[0].res3;
+		res494 = req.body.res49[0].res4;
+		res495 = req.body.res49[0].res5;
+		res496 = req.body.res49[0].res6;
+		res497 = req.body.res49[0].res7;
+		res498 = req.body.res49[0].res8;
+		poll.res49.push({res1: res491, res2: res492, res3: res493, res4: res494, res5: res495, res6: res496, res7: res497, res8: res498});
+
+		poll.res50 = req.body.res50;
+		poll.res51 = req.body.res51;
+		poll.res52 = req.body.res52;
+
 		poll.final = req.body.final;
 
 		
