@@ -8,8 +8,9 @@ module.exports = function(router){
 		
 		var poll = new Poll();
 /*primera parte 1 - 10 */
-
+/*
 		poll.parroquia = req.body.parroquia.name;
+		poll.parroquiadesc = req.body.parroquiadesc;
 		pueblo=	 req.body.personas[0].pueblo.name;
 		//sector
 		sdig1 = req.body.sector[0].sdig1;
@@ -31,22 +32,26 @@ module.exports = function(router){
 
 		//console.log(req.body.personas[0].parentesco.name);
 	for (i = 0; i < req.body.personas.length; i++) { 
-   		pnum=	req.body.personas[0].parentesco.id;
-		parentesco=		req.body.personas[0].parentesco.name;
-		snum=	 req.body.personas[0].sexo.id;
-		sexo= 	 req.body.personas[0].sexo.name;
-		edad= 	 req.body.personas[0].edad;
-		etnum=	 req.body.personas[0].etnia.id;
-		etnia=	 req.body.personas[0].etnia.name;
-		punum=	 req.body.personas[0].pueblo.id;
-		pueblo=	 req.body.personas[0].pueblo.name;
-		inum=	 req.body.personas[0].idioma.id;
-		idioma=	 req.body.personas[0].idioma.name;
-		lnum = req.body.personas[0].lugar.id;
-		lugar=	 req.body.personas[0].lugar.name;
-		nnum=	 req.body.personas[0].nivel.id;
-		nivel=	 req.body.personas[0].nivel.name;
-		
+   		pnum=	req.body.personas[i].parentesco.id;
+		parentesco=		req.body.personas[i].parentesco.name;
+		snum=	 req.body.personas[i].sexo.id;
+		sexo= 	 req.body.personas[i].sexo.name;
+		edad= 	 req.body.personas[i].edad;
+		etnum=	 req.body.personas[i].etnia.id;
+		etnia=	 req.body.personas[i].etnia.name;
+		etniadesc = req.body.personas[i].etniadesc;
+		punum=	 req.body.personas[i].pueblo.id;
+		pueblo=	 req.body.personas[i].pueblo.name;
+		pueblodesc = req.body.personas[i].pueblodesc;
+		inum=	 req.body.personas[i].idioma.id;
+		idioma=	 req.body.personas[i].idioma.name;
+		idiomadesc = req.body.personas[i].idiomadesc;
+		lnum = req.body.personas[i].lugar.id;
+		lugar=	 req.body.personas[i].lugar.name;
+		lugardesc = req.body.personas[i].lugardesc;
+		nnum=	 req.body.personas[i].nivel.id;
+		nivel=	 req.body.personas[i].nivel.name;
+		niveldesc = req.body.personas[i].niveldesc;
 
 		poll.personas.push({
 			parentesco: parentesco,
@@ -55,17 +60,23 @@ module.exports = function(router){
 			sexo: sexo, 
 			edad: edad, 
 			etnum: etnum, 
-			etnia: etnia, 
+			etnia: etnia,
+			etniadesc: etniadesc, 
 			punum: punum, 
-			pueblo: pueblo, 
+			pueblo: pueblo,
+			pueblodesc: pueblodesc, 
 			inum: inum, 
 			idioma: idioma, 
+			idiomadesc: idiomadesc,
 			lnum: lnum, 
 			lugar: lugar, 
+			lugardesc: lugardesc,
 			nnum: nnum, 
-			nivel: nivel
+			nivel: nivel,
+			niveldesc: niveldesc
 		});
 	}	
+
 
 		//pregunta 9
 		poll.res9 = req.body.res9;
@@ -123,7 +134,6 @@ module.exports = function(router){
 		res203 = req.body.res20[0].res3;
 		poll.res20.push({res1: res201, res2: res202, res3: res203});
 
-
 			//pregunta 21
 		id211 = req.body.res21[0].per.id;
 		id212 = req.body.res21[1].per.id;
@@ -151,7 +161,8 @@ module.exports = function(router){
 		poll.res21.push({patri: res214, per: per214, id: id214});
 		poll.res21.push({patri: res215, per: per215, id: id215});
 		poll.res21.push({patri: res216, per: per216, id: id216});
-		
+
+	
 		//pregunta 22
 		res221 = req.body.res22[0].res1;
 		res222 = req.body.res22[0].res2;
@@ -177,11 +188,11 @@ module.exports = function(router){
 
 		//pregunta 24
 		poll.res24 = req.body.res24;
-
+		poll.res24desc = req.body.res24desc;
 		//pregunta 25
 		poll.res25 = req.body.res25;
-
-		
+		poll.res25desc = req.body.res25desc;
+	
 
 		//pregunta 26
 		res261 = req.body.res26[0].res1;
@@ -201,9 +212,10 @@ module.exports = function(router){
 
 		//pregunta 28
 		poll.res28 = req.body.res28;
-
+		poll.res28desc = req.body.res28desc;
 		//pregunta 29
 		poll.res29 = req.body.res29;
+		poll.res29desc = req.body.res29desc;
 
 
 		//pregunta 30
@@ -214,13 +226,17 @@ module.exports = function(router){
 		res305 = req.body.res30[0].res5;
 		res306 = req.body.res30[0].res6;
 		res307 = req.body.res30[0].res7;
-		poll.res30.push({res1: res301, res2: res302, res3: res303, res4: res304,res5: res305,res6: res306,res7: res307});
+		res307desc = req.body.res30[0].res7desc;
+		
+		poll.res30.push({res1: res301, res2: res302, res3: res303, res4: res304,res5: res305,res6: res306,res7: res307,res7desc: res307desc});
+
 
 		//pregunta 31
 		res311 = req.body.res31[0].res1;
 		res312 = req.body.res31[0].res2;
 		res313 = req.body.res31[0].res3;
-		poll.res31.push({res1: res311, res2: res312, res3: res313});
+		res313desc = req.body.res31[0].res3desc;
+		poll.res31.push({res1: res311, res2: res312, res3: res313, res3desc: res313desc});
 
 		poll.res32 = req.body.res32;
 		poll.res33 = req.body.res33;
@@ -238,7 +254,8 @@ module.exports = function(router){
 		res362 = req.body.res36[0].res2;
 		res363 = req.body.res36[0].res3;
 		poll.res36.push({res1: res361, res2: res362, res3: res363});
-		
+*/
+
 	//pregunta 37
 		res371 = req.body.res37[0].res1;
 		res372 = req.body.res37[0].res2;
@@ -279,7 +296,7 @@ module.exports = function(router){
 		res405 = req.body.res40[0].res5;
 		res406 = req.body.res40[0].res6;
 		poll.res40.push({res1: res401, res2: res402, res3: res403, res4: res404, res5: res405, res6: res406});
-
+/*
 		poll.res41 = req.body.res41;
 		poll.res42 = req.body.res42;
 		poll.res43 = req.body.res43;
@@ -384,7 +401,7 @@ module.exports = function(router){
 		res634 = req.body.res63[0].res4;
 		res635 = req.body.res63[0].res5;
 		poll.res63.push({res1: res631, res2: res632, res3: res633, res4: res634, res5: res635});
-
+*/
 		poll.res64 = req.body.res64;
 
 	

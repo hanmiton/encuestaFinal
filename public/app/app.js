@@ -36,7 +36,7 @@ angular.module('pollApp',['appRoutes'])
       {id: '4', name: 'Mulato'},
       {id: '5', name: 'Montubio'},
       {id: '6', name: 'Blanco'},
-      {id: '7', name: 'Otro'}
+      {id: '9', name: 'Otro'}
     ]
    };
    //Nacionalidad
@@ -45,8 +45,8 @@ angular.module('pollApp',['appRoutes'])
       {id: '1', name: 'Kayambi'},
       {id: '2', name: 'Otavalo'},
       {id: '3', name: 'Caranqui'},
-      {id: '4', name: 'Otro'},
-      {id: '5', name: 'Ninguno'}
+      {id: '9', name: 'Otro'},
+      {id: '10', name: 'Ninguno'}
     ]
    };
    //Idioma
@@ -67,7 +67,7 @@ angular.module('pollApp',['appRoutes'])
       {id: '4', name: 'Olmedo'},
       {id: '5', name: 'Cuzubamba'},
       {id: '6', name: 'Otón'},
-      {id: '7', name: 'Otro'}
+      {id: '9', name: 'Otro'}
     ]
    };  
    	//Niveles
@@ -336,7 +336,13 @@ $scope.pase = false;
 			dir2: ''
 		}],
 		comunidad: '',
-		personas: [ { parentesco: '',
+		personas: [ { 
+            etniadesc   : '',
+            pueblodesc : '',
+            idiomadesc : '',
+            lugardesc : '',
+            niveldesc : '',
+            parentesco: '',
 						sexo:'',
 						edad:'',
 						etnia:'',
@@ -360,7 +366,6 @@ $scope.pase = false;
       res2: '',
       res3: ''
     }],
-    res19: true,
     res18: [{
       res1: '',
       res2: '',
@@ -428,12 +433,14 @@ $scope.pase = false;
       res4: '',
       res5: '',
       res6: '',
-      res7: ''
+      res7: '',
+      res7desc: ''
     }],
     res31: [{
       res1: '',
       res2: '',
-      res3: ''
+      res3: '',
+      res3desc: ''
     }],
     res35: [{
       res1: '',
@@ -561,13 +568,19 @@ $scope.pase = false;
 
 	$scope.addChoice = function() {
 		$scope.poll.personas.push({ parentesco: '',
-						sexo:'',
-						edad:'',
-						etnia:'',
-						pueblo:'',
-						idioma: '',
-						lugar: '',
-						nivel: '' });
+						etniadesc   : '',
+            pueblodesc : '',
+            idiomadesc : '',
+            lugardesc : '',
+            niveldesc : '',
+            parentesco: '',
+            sexo:'',
+            edad:'',
+            etnia:'',
+            pueblo:'',
+            idioma: '',
+            lugar: '',
+            nivel: '' });
 	};
 
   $scope.submit = function(regData) {

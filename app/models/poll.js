@@ -14,6 +14,11 @@ var dirSchema = new mongoose.Schema({
 });
 
 var perSchema = new mongoose.Schema({ 
+	etniadesc  : { type: String },
+	pueblodesc : { type: String },
+	idiomadesc : { type: String },
+	lugardesc : { type: String },
+	niveldesc : { type: String },
 	pnum: { type: Number },
 	parentesco: { type: String },
 	snum: { type: Number },
@@ -91,14 +96,16 @@ var ressub30Schema = new mongoose.Schema({
 	res4: { type: Boolean },
 	res5: { type: Boolean },
 	res6: { type: Boolean },
-	res7: { type: Boolean }
+	res7: { type: Boolean },
+	res7desc: { type: String }
 });
 
 // pregunta 31
 var ressub31Schema = new mongoose.Schema({ 
 	res1: { type: Boolean },
 	res2: { type: Boolean },
-	res3: { type: Boolean }
+	res3: { type: Boolean },
+	res3desc: { type: String }
 });
 
 // pregunta 37
@@ -233,6 +240,7 @@ var ressub63Schema = new mongoose.Schema({
 // Document schema for polls
 var PollSchema = new mongoose.Schema({
 	parroquia: { type: String },
+	parroquiadesc: { type: String },
 	zona: [numSchema],
 	sector: [numSchema],
 	comunidad: { type: String },
@@ -254,11 +262,16 @@ var PollSchema = new mongoose.Schema({
 	res22: [ressub22Schema],
 	res23: [ressub23Schema],
 	res24: String,
+	res24: String,
+	res24desc: String,
 	res25: String,
+	res25desc: String,
 	res26: [ressub22Schema],
 	res27: [ressub23Schema],
 	res28: String,
+	res28desc: String,
 	res29: String,
+	res29desc: String,
 	res30: [ressub30Schema],
 	res31: [ressub31Schema],
 	res32: Boolean,

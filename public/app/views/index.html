@@ -35,7 +35,7 @@
           <li>Zona</li>
           <li>Sector</li>
         </ul>
- 
+ <!--
         <fieldset>
         <h2 class="fs-title">Parroquia:</h2>
           </select>
@@ -44,8 +44,11 @@
             ng-model="poll.parroquia">
             <option value=""> --Parroquia-- </option>
           </select>
+           <input  ng-model= "poll.parroquiadesc" ng-show= "poll.parroquia.id == 9" type="text" name="parroquia" placeholder="Parroquia"/>
+         
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+       
         <fieldset>
           <h2 class="fs-title">Zona</h2>
           <input id="msform3" type="number" min="0" max="9" name="zdig1" ng-model="poll.zona[0].zdig1"  placeholder="0"/>
@@ -54,6 +57,7 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+       
         <fieldset>
           <h2 class="fs-title">Sector</h2>
           <input id="msform3"  type="number" min="0" max="9" name="sdig1" ng-model="poll.sector[0].sdig1"  placeholder="0"/>
@@ -62,6 +66,7 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+       
          <fieldset>
           <h2 class="fs-title">Comunidad</h2>
           <input type="text" name="comunidad" ng-model="poll.comunidad"  placeholder="Comunidad"/>
@@ -76,7 +81,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
       
-        
+      
         <fieldset>
         <h2 class="fs-title">Personas</h2>
           
@@ -103,9 +108,10 @@
             ng-model="persona.etnia">
             <option value=""> --Etnia-- </option>
           </select>
+          <input  ng-model= "persona.etniadesc" ng-show= "persona.etnia.id == 9" type="text" name="parroquia" placeholder="Etnia"/>
               </td>
               <td>
-                <input id="msformedad" type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Edad"/>
+                <input id="msformedad" type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Años Cumplidos"/>
               </td>
               <td>
                 <select 
@@ -113,6 +119,7 @@
             ng-model="persona.pueblo">
             <option value=""> --Pueblo-- </option>
           </select>
+          <input  ng-model= "persona.pueblodesc" ng-show= "persona.pueblo.id == 9" type="text" name="pueblo" placeholder="Pueblo"/>
               </td>
               <td>
                 <select 
@@ -120,6 +127,7 @@
             ng-model="persona.idioma">
             <option value=""> --Idioma-- </option>
           </select>
+          <input  ng-model= "persona.idiomadesc" ng-show= "persona.idioma.id == 2" type="text" name="idioma" placeholder="Idioma"/>
               </td>
               <td>
                 <select 
@@ -127,13 +135,15 @@
             ng-model="persona.lugar">
             <option value=""> --Lugar nacimiento-- </option>
           </select>
+          <input  ng-model= "persona.lugardesc" ng-show= "persona.lugar.id == 9" type="text" name="lugar" placeholder="Lugar"/>
               </td>
               <td>
                 <select 
-            ng-options="opcion.name for opcion in niveles.opciones track by opcion.id"
+            ng-options="opcion.id for opcion in niveles.opciones track by opcion.id"
             ng-model="persona.nivel">
             <option value=""> --Nivel Académico-- </option>
           </select>
+          <input  ng-model= "persona.niveldesc" ng-show= "persona.nivel.id >= 4" type="number" min="0" max="9" name="nivel" placeholder="nivel"/>
               </td>
            </tr>
           
@@ -141,8 +151,10 @@
            <input type="button" name="previous" class="action-button" value="Añadir" ng-click="addChoice()"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next"/>
-        </fieldset>    
+        </fieldset> 
+
           
+    
         <fieldset>
           <h2 class="fs-title">¿Sabía que el patrimonio cultural de Cayambe es una herencia propia de sus ancestros?</h2>
           <br>
@@ -341,46 +353,64 @@
   
   
         <fieldset>
+        <div ng-show="poll.res19[0].res1">
           <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res18[0].res1}}: </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[0].per">
                   <option value=""> --Selección-- </option>
           </select>
+          
+        </div>
+        <div ng-show="poll.res19[0].res2">
           <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res18[0].res2}}:  </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[1].per">
                   <option value=""> --Selección-- </option>
           </select>
+          
+        </div>
+        <div ng-show="poll.res19[0].res3">
           <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res18[0].res3}}:  </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[2].per">
                   <option value=""> --Selección-- </option>
           </select>
-          <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res20[0].res3}}:  </h2>
+          
+        </div>
+        <div ng-show="poll.res20[0].res1">
+           <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res20[0].res3}}:  </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[3].per">
                   <option value=""> --Selección-- </option>
           </select>
+         
+        </div>
+        <div ng-show="poll.res20[0].res2">
           <h2 class="fs-title">Quién le hizo conocer el patrimonio {{poll.res20[0].res3}}:  </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[4].per">
                   <option value=""> --Selección-- </option>
           </select>
-          <h2 class="fs-title">Quién le hizo conocer el patrimonio: {{poll.res20[0].res3}} </h2>
+          
+        </div>
+        <div ng-show="poll.res20[0].res3">
+           <h2 class="fs-title">Quién le hizo conocer el patrimonio: {{poll.res20[0].res3}} </h2>
           <select 
                 ng-options="opcion.name for opcion in spatrimonio.opciones track by opcion.id"
                 ng-model="poll.res21[5].per">
                   <option value=""> --Selección-- </option>
           </select>
+         
+        </div>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset> 
-       
+     
 
  
         <fieldset>
@@ -579,7 +609,7 @@
               </div>
           </div>
           <br>
-          <input ng-show= "poll.res24 == 9 " ng-model="poll.res24" type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res24 == 9 " ng-model="poll.res24desc" type="text" placeholder="Especifique"/>
           
            </div>
           <div ng-show="!poll.res22[0].res1 && !poll.res22[0].res2 && !poll.res22[0].res3 && !poll.res22[0].res4 && !poll.res22[0].res5 && !poll.res22[0].res6 && !poll.res22[0].res7">
@@ -624,12 +654,13 @@
               </div>
           </div>
           <br>
-          <input ng-show= "poll.res25 == 9 " ng-model="poll.res25" type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res25 == 9 " ng-model="poll.res25desc" type="text" placeholder="Especifique"/>
           </div>
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+
 
 
 
@@ -756,11 +787,11 @@
            <div class="funkyradio">
               <div class="funkyradio-success">
                   <input ng-model="poll.res28" type="radio" name="preg28" id="ch51" value= "9" />
-                  <label for="ch2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
+                  <label for="ch51">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOtro&nbsp&nbsp</label>
               </div>
           </div>
           <br>
-          <input ng-show= "poll.res28 == 9 " ng-model="poll.res28" type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res28 == 9 " ng-model="poll.res28desc" type="text" placeholder="Especifique"/>
           
           </div>
 
@@ -808,7 +839,7 @@
               </div>
           </div>
           <br>
-          <input ng-show= "poll.res29 == 9 " ng-model="poll.res29" type="text" placeholder="Especifique"/>
+          <input ng-show= "poll.res29 == 9 " ng-model="poll.res29desc" type="text" placeholder="Especifique"/>
           </div>
 
           <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -931,7 +962,7 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Celebración"/>
+          <input ng-show="poll.res30[0].res7" ng-model="poll.res30[0].res7desc" type="text" placeholder="Celebración"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -990,7 +1021,7 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-show="poll.res31[0].res3" ng-model="poll.res31[0].res3desc" type="text" placeholder="Especifique"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -1086,7 +1117,7 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
- 
+ -->
  
         <fieldset>
           <h2 class="fs-title">Tiene en su casa objetos arqueológicos:</h2>
@@ -1186,7 +1217,7 @@
               </div>
           </div>
           <br>
-
+           <input ng-show="poll.res37[0].res6" ng-model="poll.res37[0].res6desc" type="text" placeholder="Especifique"/>
 
           <div ng-show="poll.res37[0].res1 || poll.res37[0].res2 || poll.res37[0].res3 || poll.res37[0].res4 || poll.res37[0].res5 || poll.res37[0].res6">
 
@@ -1256,6 +1287,7 @@
           </div>
           <br>
 
+           <input ng-show="poll.res38[0].res4" ng-model="poll.res38[0].res4desc" type="text" placeholder="Especifique"/>
           </div>
 
           <div ng-show="poll.res37[0].res1 || poll.res37[0].res2 || poll.res37[0].res3 || poll.res37[0].res4 || poll.res37[0].res5 || poll.res37[0].res6">
@@ -1440,6 +1472,8 @@
           </div>
           <br>
          
+
+           <input ng-show="poll.res39[0].res11" ng-model="poll.res39[0].res11desc" type="text" placeholder="Especifique"/>
           </div>
 
 
@@ -1543,8 +1577,8 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
-
+        
+           <input ng-show="poll.res40[0].res6" ng-model="poll.res40[0].res6desc" type="text" placeholder="Especifique"/>
           </div>
 
 
@@ -1785,8 +1819,8 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          
+           <input ng-show="poll.res45[0].res10" ng-model="poll.res45[0].res10desc" type="text" placeholder="Especifique"/><input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
@@ -1976,7 +2010,8 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          
+           <input ng-show="poll.res46[0].res11" ng-model="poll.res46[0].res11desc" type="text" placeholder="Especifique"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -2566,8 +2601,9 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
-          <input type="button" name="previous" class="previous action-button" value="Previous" />
+          
+           <input ng-show="poll.res57 == 9" ng-model="poll.res57desc" type="text" placeholder="Especifique"/>
+           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
     
@@ -2636,7 +2672,8 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-show="poll.res58 == 9" ng-model="poll.res58desc" type="text" placeholder="Especifique"/>
+           
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -2885,6 +2922,7 @@
               </div>
           </div>
           <br>
+
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -2932,7 +2970,8 @@
               </div>
           </div>
           <br>
-          <input type="text" placeholder="Especifique"/>
+          <input ng-show="poll.res62 == 9" ng-model="poll.res62desc" type="text" placeholder="Especifique"/>
+           
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -3018,7 +3057,8 @@
                   <label for="ch303">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNo&nbsp&nbsp</label>
               </div>
           </div>
-         
+          <input ng-show="poll.res63[0].res5" ng-model="poll.res63[0].res5desc" type="text" placeholder="Especifique"/>
+           
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
