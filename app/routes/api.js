@@ -8,7 +8,7 @@ module.exports = function(router){
 		
 		var poll = new Poll();
 /*primera parte 1 - 10 */
-/*
+
 		poll.parroquia = req.body.parroquia.name;
 		poll.parroquiadesc = req.body.parroquiadesc;
 		pueblo=	 req.body.personas[0].pueblo.name;
@@ -254,7 +254,7 @@ module.exports = function(router){
 		res362 = req.body.res36[0].res2;
 		res363 = req.body.res36[0].res3;
 		poll.res36.push({res1: res361, res2: res362, res3: res363});
-*/
+
 
 	//pregunta 37
 		res371 = req.body.res37[0].res1;

@@ -480,7 +480,7 @@ $scope.pase = false;
       res9: '',
       res10: '',
       res11: '',
-      res11desc
+      res11desc: ''
     }],
     res40: [{
       res1: '',
