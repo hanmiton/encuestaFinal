@@ -167,7 +167,7 @@
 
       
         <fieldset>
-        <div> pregutna 11-12 </div>
+      
           <h2 class="fs-title">¿Conoce que Cayambe tiene abundante patrimonio cultural?</h2>
           <br>
           <div class="funkyradio">
@@ -224,7 +224,6 @@
 
       
         <fieldset>
-        <div>pregutna 13-14</div>
           <h2 class="fs-title">¿Conoce sitios sagrados en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -254,7 +253,6 @@
         
 
         <fieldset>
-        <div> pregunta 15-16</div> 
           <h2 class="fs-title">¿Conoce edificios o inmuebles patrimoniales en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -285,7 +283,6 @@
 
 
         <fieldset>
-        <div>pregunta 17-21</div>
           <h2 class="fs-title">¿Conoce leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
@@ -387,7 +384,6 @@
 
  
         <fieldset>
-        <div>pregunta 22-25 </div>
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales conoce ?</h2>
           <p>{{bienes.opciones[0].name}}</p>
           <br>
@@ -639,7 +635,7 @@
 
 
     <fieldset>
-    <div>pregunta 26-29</div> 
+
           <h2 class="fs-title">¿Cuál de los siguientes bienes patrimoniales inmuebles conoce?</h2>
           <p>{{inmuebles.opciones[0].name}}</p>
           <br>
@@ -822,8 +818,6 @@
 
   
         <fieldset>
-
-        <div>pregunta 30</div>
           <h2 class="fs-title">¿ En cuál celebración participa ?</h2>
           <p>{{celebraciones.opciones[0].name}}</p>
           <br>
@@ -947,7 +941,6 @@
 
 
         <fieldset>
-        <div>pregunta 31</div>
           <h2 class="fs-title">Cuándo presenta síntomas de enfermedad, a quien acude: </h2>
           <p>{{medicinas.opciones[0].name}}</p>
           <br>
@@ -1005,7 +998,6 @@
 
   
      <fieldset>
-          <div> pregutna 32- 36</div>
           <h2 class="fs-title">¿ Conoce que en Cayambe atraviesa la línea equinoccial (Latitud 0" 0´) ?</h2>
           <br>
           <div class="funkyradio">
@@ -1097,7 +1089,6 @@
  
  
         <fieldset>
-        <div>pregunta  37-45</div>
           <h2 class="fs-title">Tiene en su casa objetos arqueológicos:</h2>
           <p>{{materiales.opciones[0].name}}</p>
           <br>
@@ -1630,7 +1621,7 @@
 
  
         <fieldset>
-        <div>pregunta 45 - 52</div>
+
           <h2 class="fs-title">Tiene en su casa objetos de la época colonial o republicana. Confirme si posee alguno entre los siguientes tipos:</h2>
           <p>{{objetos.opciones[0].name}}</p>
           <br>
@@ -2431,7 +2422,7 @@
 
 
      <fieldset>
-          <div>pregunta 53 - 55</div>
+         
           <h2 class="fs-title">¿Estaría dispuesto a que sus bienes puedan ser exhibidos ?</h2>
           <br>
           <div class="funkyradio">
@@ -2519,7 +2510,7 @@
 
 
       <fieldset>
-          <div>pregunta 57-58</div>
+        
           <h2 class="fs-title">¿ Cuál institución en Cayambe debe conservar, preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines ?</h2>
           <br>
           <div class="funkyradio">
@@ -2653,7 +2644,7 @@
 
 
         <fieldset>
-        <div>pregunta 59</div>
+     
           <h2 class="fs-title"> El Municipio tiene dichas competencias. ¿Cuáles facultades conoce usted que tiene el GAD, respecto al patrimonio cultural ? </h2>
           <p>{{competencias.opciones[0].name}}</p>
           <br>
@@ -2854,7 +2845,7 @@
 
 
      <fieldset>
-          <div>pregunta 60-61</div>
+
           <h2 class="fs-title">¿Conoce que el Municipio, para el cumplimiento de las competencias y facultades, cuenta con una jefatura compuesta por dos servidores públicos?</h2>
           <br>
           <div class="funkyradio">
@@ -2945,13 +2936,8 @@
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
- -->  
-
-
-
 
         <fieldset>
-          <div>pregunta 63</div>
           <h2 class="fs-title">A fin de preservar, mantener y difundir el patrimonio cultural y crear espacios para estos fines, de qué forma se debería financiar:</h2>
           <p>{{contribuciones.opciones[0].name}}</p>
           <br>
@@ -3040,7 +3026,7 @@
 
         <fieldset>
           <h2 class="fs-title">¿Cuánto sería el valor por mes que usted estaría dispuesto a contribuir?</h2>
-          <input type="text" name="res64" ng-model="regData.res64" placeholder="res64"/>
+          <input type="number"  name="res64" ng-model="poll.res64"  placeholder="0"/>
            <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>

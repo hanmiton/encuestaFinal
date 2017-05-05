@@ -588,7 +588,6 @@ $scope.pase = false;
     $scope.poll.res21[4].patri =  $scope.poll.res20[0].res2 ;
     $scope.poll.res21[5].patri =  $scope.poll.res20[0].res3 ;
    
-    $scope.poll.final =  regData.final;
 
 		console.log($scope.poll);
 
