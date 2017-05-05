@@ -38,6 +38,7 @@ mongoose.connect('mongodb://localhost:27017/encuesta2', function(err){
 app.get('*',function(req, res){
 	res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
 });
+//cambiando peurto
 
 
 var server = app.listen(80, function () {
