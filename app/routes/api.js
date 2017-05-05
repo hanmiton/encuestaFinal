@@ -264,7 +264,7 @@ module.exports = function(router){
 		res375 = req.body.res37[0].res5;
 		res376 = req.body.res37[0].res6;
 		res376desc = req.body.res37[0].res6desc;
-		poll.res37.push({res1: res371, res2: res372, res3: res373, res4: res374, res5: res375, res6: res376, , res6desc: res376desc});
+		poll.res37.push({res1: res371, res2: res372, res3: res373, res4: res374, res5: res375, res6: res376, res6desc: res376desc});
 
 		//pregunta 38
 		res381 = req.body.res38[0].res1;
@@ -288,7 +288,7 @@ module.exports = function(router){
 		res3911 = req.body.res39[0].res11;
 		res3911desc = req.body.res39[0].res11desc;
 		poll.res39.push({res1: res391, res2: res392, res3: res393, res4: res394, res5: res395, res6: res396
-				, res7: res397, res8: res398, res9: res399, res10: res3910, res11: res3911, , res11desc: res3911desc		});
+				, res7: res397, res8: res398, res9: res399, res10: res3910, res11: res3911, res11desc: res3911desc		});
 
 		//pregunta 40
 
@@ -413,7 +413,7 @@ module.exports = function(router){
 		res635 = req.body.res63[0].res5;
 		res635desc = req.body.res63[0].res5desc;
 		
-		poll.res63.push({res1: res631, res2: res632, res3: res633, res4: res634, res5: res635, , res5desc: res635desc});
+		poll.res63.push({res1: res631, res2: res632, res3: res633, res4: res634, res5: res635,  res5desc: res635desc});
 
 		poll.res64 = req.body.res64;
 
