@@ -316,6 +316,9 @@ angular.module('pollApp',['appRoutes'])
       {id: '4', name: 'Contribución obligatoria a las empresas'}    ]
    };
 
+
+//
+$scope.pase = false;
    $scope.poll = {
 		parroquia: '',
 		sector: [{
@@ -357,6 +360,7 @@ angular.module('pollApp',['appRoutes'])
       res2: '',
       res3: ''
     }],
+    res19: true,
     res18: [{
       res1: '',
       res2: '',

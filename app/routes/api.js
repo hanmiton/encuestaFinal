@@ -9,8 +9,8 @@ module.exports = function(router){
 		var poll = new Poll();
 /*primera parte 1 - 10 */
 
-		poll.parroquia = req.body.parroquia;
-
+		poll.parroquia = req.body.parroquia.name;
+		pueblo=	 req.body.personas[0].pueblo.name;
 		//sector
 		sdig1 = req.body.sector[0].sdig1;
 		sdig2 = req.body.sector[0].sdig2;

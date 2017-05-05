@@ -37,24 +37,28 @@
         </ul>
  
         <fieldset>
-        <div> pregutna 1-10 </div>
-          <h2 class="fs-title">Parroquia</h2>
-          <input type="text" name="parroquia" ng-model="poll.parroquia"  placeholder="Parroquia"/>
+        <h2 class="fs-title">Parroquia:</h2>
+          </select>
+                <select 
+            ng-options="opcion.name for opcion in nacimientos.opciones track by opcion.id"
+            ng-model="poll.parroquia">
+            <option value=""> --Parroquia-- </option>
+          </select>
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Zona</h2>
-          <input type="number" min="0" max="9" name="zdig1" ng-model="poll.zona[0].zdig1"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="zdig2" ng-model="poll.zona[0].zdig2"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="zdig3" ng-model="poll.zona[0].zdig3"  placeholder="0"/>
+          <input id="msform3" type="number" min="0" max="9" name="zdig1" ng-model="poll.zona[0].zdig1"  placeholder="0"/>
+          <input id="msform3"  type="number" min="0" max="9" name="zdig2" ng-model="poll.zona[0].zdig2"  placeholder="0"/>
+          <input id="msform3"  type="number" min="0" max="9" name="zdig3" ng-model="poll.zona[0].zdig3"  placeholder="0"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
         <fieldset>
           <h2 class="fs-title">Sector</h2>
-          <input type="number" min="0" max="9" name="sdig1" ng-model="poll.sector[0].sdig1"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="sdig2" ng-model="poll.sector[0].sdig2"  placeholder="0"/>
-          <input type="number" min="0" max="9" name="sdig3" ng-model="poll.sector[0].sdig3"  placeholder="0"/>
+          <input id="msform3"  type="number" min="0" max="9" name="sdig1" ng-model="poll.sector[0].sdig1"  placeholder="0"/>
+          <input id="msform3"  type="number" min="0" max="9" name="sdig2" ng-model="poll.sector[0].sdig2"  placeholder="0"/>
+          <input  id="msform3" type="number" min="0" max="9" name="sdig3" ng-model="poll.sector[0].sdig3"  placeholder="0"/>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
@@ -101,7 +105,7 @@
           </select>
               </td>
               <td>
-                <input type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Edad"/>
+                <input id="msformedad" type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Edad"/>
               </td>
               <td>
                 <select 
@@ -300,9 +304,9 @@
           <br>
           <div ng-show="poll.res17">
             <h2 class="fs-title">Señale tres principales conocimientos, entre  leyendas, cuentos, mitos, coplas, juegos o ritos que existen en Cayambe, señale los tres principales: </h2>
-              <input ng-model= "poll.res18[0].res1" type="text" placeholder="Sitio1"/>
-              <input ng-model= "poll.res18[0].res2" type="text" placeholder="Sitio2"/>
-              <input ng-model= "poll.res18[0].res3" type="text" placeholder="Sitio3"/>
+              <input ng-model= "poll.res18[0].res1" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res18[0].res2" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res18[0].res3" type="text" placeholder="Especifique"/>
           </div>
          
           <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -311,7 +315,7 @@
 
 
         <fieldset>
-          <h2 class="fs-title">¿Conoce sitios arqueológicos en Cayambe ?</h2>
+          <h2 class="fs-title">¿Conoce leyendas, cuentos, mitos, coplas, juegos o ritos que existían en Cayambe ?</h2>
           <br>
           <div class="funkyradio">
               <div class="funkyradio-success">
@@ -329,9 +333,9 @@
           <br>
           <div ng-show="poll.res19">
                <h2 class="fs-title">Señale tres principales conocimientos, entre tradiciones, leyendas, cuentos, juegos, ritos o conocimientos de Cayambe, señale los tres principales que se han  perdido: </h2>
-              <input ng-model= "poll.res20[0].res1" type="text" placeholder="Sitio1"/>
-              <input ng-model= "poll.res20[0].res2" type="text" placeholder="Sitio2"/>
-              <input ng-model= "poll.res20[0].res3" type="text" placeholder="Sitio3"/>
+              <input ng-model= "poll.res20[0].res1" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res20[0].res2" type="text" placeholder="Especifique"/>
+              <input ng-model= "poll.res20[0].res3" type="text" placeholder="Especifique"/>
           </div>
           <input type="button" name="previous" class="previous action-button" value="Previous" />
           <input type="button" name="next" class="next action-button" value="Next" />

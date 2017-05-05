@@ -43,8 +43,10 @@ body {
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
+
 /*inputs*/
-#msform input, #msform textarea, #msform select, #msform option {
+#msform input[type="text"], #msform textarea, #msform select, #msform option {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -55,6 +57,21 @@ body {
 	color: #2C3E50;
 	font-size: 13px;
 }
+
+/*inputs*/
+#msform input[type="number"] {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+
+
 
 #msform select, #msform option{
 	padding: 3px;
@@ -74,6 +91,15 @@ body {
 }
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+#msformedad{
+	width: 100%;
+}
+
+
+#msform3{
+	width: 30%;
 }
 /*headings*/
 .fs-title {
