@@ -105,7 +105,7 @@ var ressub31Schema = new mongoose.Schema({
 	res1: { type: Boolean },
 	res2: { type: Boolean },
 	res3: { type: Boolean },
-	res3desc: { type: String }
+	res3desc: { type: String}
 });
 
 // pregunta 37
@@ -115,7 +115,8 @@ var ressub37Schema = new mongoose.Schema({
 	res3: { type: Boolean },
 	res4: { type: Boolean },
 	res5: { type: Boolean },
-	res6: { type: Boolean }
+	res6: { type: Boolean },
+	res6desc: {type: String}
 });
 
 // pregunta 38
@@ -123,7 +124,8 @@ var ressub38Schema = new mongoose.Schema({
 	res1: { type: Boolean },
 	res2: { type: Boolean },
 	res3: { type: Boolean },
-	res4: { type: Boolean }
+	res4: { type: Boolean },
+	res4desc: {type: String}
 });
 
 // pregunta 39
@@ -138,7 +140,8 @@ var ressub39Schema = new mongoose.Schema({
 	res8: { type: Boolean },
 	res9: { type: Boolean },
 	res10: { type: Boolean },
-	res11: { type: Boolean }
+	res11: { type: Boolean },
+	res11desc: {type: String}
 });
 
 // pregunta 40
@@ -148,7 +151,8 @@ var ressub40Schema = new mongoose.Schema({
 	res3: { type: Boolean },
 	res4: { type: Boolean },
 	res5: { type: Boolean },
-	res6: { type: Boolean }
+	res6: { type: Boolean },
+	res6desc: {type: String}
 });
 
 // pregunta 45
@@ -162,7 +166,8 @@ var ressub45Schema = new mongoose.Schema({
 	res7: { type: Boolean },
 	res8: { type: Boolean },
 	res9: { type: Boolean },
-	res10: { type: Boolean }
+	res10: { type: Boolean },
+	res10desc: {type: String}
 });
 
 // pregunta 46
@@ -177,7 +182,8 @@ var ressub46Schema = new mongoose.Schema({
 	res8: { type: Boolean },
 	res9: { type: Boolean },
 	res10: { type: Boolean },
-	res11: { type: Boolean }
+	res11: { type: Boolean },
+	res11desc: {type: String}
 });
 
 // pregunta 47
@@ -234,7 +240,8 @@ var ressub63Schema = new mongoose.Schema({
 	res2: { type: Boolean },
 	res3: { type: Boolean },
 	res4: { type: Boolean },
-	res5: { type: Boolean }
+	res5: { type: Boolean },
+	res5desc: {type: String}
 });
 
 // Document schema for polls
@@ -300,12 +307,16 @@ var PollSchema = new mongoose.Schema({
 	res55: Boolean,
 	res56: [ressubSchema],
 	res57: Number,
+	res57desc: String,
 	res58: Number,
+	res58desc: String,
 	res59: [ressub59Schema],
 	res60: Boolean,
 	res61: Boolean,
 	res62: Number,
+	res62desc: String,
 	res63: [ressub63Schema],
+	res63desc: String,
 	res64: Number
 });
 

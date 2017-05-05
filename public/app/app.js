@@ -458,13 +458,15 @@ $scope.pase = false;
       res3: '',
       res4: '',
       res5: '',
-      res6: ''
+      res6: '',
+      res6desc: ''
     }],
     res38: [{
       res1: '',
       res2: '',
       res3: '',
-      res4: ''
+      res4: '',
+      res4desc: ''
     }],
     res39: [{
       res1: '',
@@ -477,7 +479,8 @@ $scope.pase = false;
       res8: '',
       res9: '',
       res10: '',
-      res11: ''
+      res11: '',
+      res11desc
     }],
     res40: [{
       res1: '',
@@ -485,7 +488,8 @@ $scope.pase = false;
       res3: '',
       res4: '',
       res5: '',
-      res6: ''
+      res6: '',
+      res6desc: ''
     }],
     res45: [{
       res1: '',
@@ -497,7 +501,8 @@ $scope.pase = false;
       res7: '',
       res8: '',
       res9: '',
-      res10: ''
+      res10: '',
+      res10desc: ''
     }],
     res46: [{
       res1: '',
@@ -510,7 +515,8 @@ $scope.pase = false;
       res8: '',
       res9: '',
       res10: '',
-      res11: ''
+      res11: '',
+      res11desc: ''
     }],
     res47: [{
       res1: '',
@@ -556,13 +562,6 @@ $scope.pase = false;
       res9: '',
       res10: '',
       res11: ''
-    }],
-    res59: [{
-      res1: '',
-      res2: '',
-      res3: '',
-      res4: '',
-      res5: ''
     }]
 	};
 
