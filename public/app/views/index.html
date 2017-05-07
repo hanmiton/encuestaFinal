@@ -102,7 +102,13 @@
                 <option value=""> --Sexo-- </option>
                 </select>
               </td>
+
               <td>
+                <input id="msformedad" type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Años Cumplidos"/>
+              </td>
+              <td>
+                
+
                 <select 
             ng-options="opcion.name for opcion in etnias.opciones track by opcion.id"
             ng-model="persona.etnia">
@@ -110,9 +116,7 @@
           </select>
           <input  ng-model= "persona.etniadesc" ng-show= "persona.etnia.id == 9" type="text" name="parroquia" placeholder="Etnia"/>
               </td>
-              <td>
-                <input id="msformedad" type="number" min="0" max="150"  ng-model="persona.edad"  placeholder="Años Cumplidos"/>
-              </td>
+              
               <td>
                 <select 
             ng-options="opcion.name for opcion in nacionalidades.opciones track by opcion.id"
