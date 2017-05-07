@@ -18,6 +18,10 @@ html {
 
 body {
 	font-family: montserrat, arial, verdana;
+	background-image: url("http://municipiocayambe.gob.ec/wp-content/uploads/2017/04/logo.png");
+	background-repeat: cover;
+	 background-position: 0px -25px;
+	 background-repeat: no-repeat;
 }
 /*form styles*/
 #msform {
@@ -42,6 +46,18 @@ body {
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
 	display: none;
+}
+
+input[type="text"], #msform textarea, #msform select, #msform option {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
 }
 
 
@@ -70,7 +86,18 @@ body {
 	font-size: 13px;
 }
 
-
+#new{
+	position: relative;
+	width: 200px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
 
 
 #msform select, #msform option{
