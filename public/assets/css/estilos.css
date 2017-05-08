@@ -271,3 +271,7 @@ input[type="text"], #msform textarea, #msform select, #msform option {
     color: #fff;
     background-color: #5bc0de;
 }
+#verde {
+	color: #fff;
+    background-color: #5cb85c;
+}

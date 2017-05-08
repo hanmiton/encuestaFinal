@@ -225,7 +225,7 @@
           </div>
           <br>
 
-         <div ng-show="poll.res11">
+         <div ng-show="poll.res11" >
           <h2 class="fs-title">Señale tres sitios arqueológicos que usted conoce de Cayambe:</h2>
           <input ng-model= "poll.res12[0].res1" type="text" placeholder="Especifique"/>
           <input ng-model= "poll.res12[0].res2" type="text" placeholder="Especifique"/>
@@ -3067,7 +3067,6 @@
           <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
 
-
         <fieldset>
           <h2 class="fs-title">¿Cuánto sería el valor por mes que usted estaría dispuesto a contribuir?</h2>
           <input type="number"  name="res64" ng-model="poll.res64"  placeholder="0"/>
@@ -3075,12 +3074,14 @@
           <input type="submit" name="submit" class="submit action-button" value="Submit" />
           
         </fieldset>
-
+         
       </form>
-      <form action="http://www.cayambepatrimonio.info:5000/" method="get">
-            <input type="submit" value="Nueva Encuesta" 
+
+      <form  action="http://www.cayambepatrimonio.info:5000/" method="get">
+            <input  type="submit" value="Nueva Encuesta" 
                  class="submit action-button" name="submit" id="new" />
         </form>
+     
     </div>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           <script src="assets/js/app.js"></script>

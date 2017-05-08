@@ -2,7 +2,7 @@
 
 var express = require('express');
 var app = express();
-var port =  5000;
+var port =  80;
 var morgan = require('morgan');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
@@ -41,6 +41,6 @@ app.get('*',function(req, res){
 //cambiando peurto
 
 
-var server = app.listen(5000, function () {
-  console.log('Listening on localhost:5000');
+var server = app.listen(80, function () {
+  console.log('Listening on localhost:80');
 });
