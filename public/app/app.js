@@ -322,14 +322,14 @@ $scope.pase = false;
    $scope.poll = {
 		parroquia: '',
 		sector: [{
-			sdig1: '',
-			sdig2: '',
-			sdig3: ''
+			sdig1: '0',
+			sdig2: '0',
+			sdig3: '0'
 		}],
 		zona: [{
-			zdig1: '',
-			zdig2: '',
-			zdig3: ''
+			zdig1: '0',
+			zdig2: '0',
+			zdig3: '0'
 		}],
 		direccion: [{
 			dir1: '',
@@ -406,13 +406,13 @@ $scope.pase = false;
       otro: ''
     }],
     res23: [{
-      res1: '',
-      res2: '',
-      res3: '',
-      res4: '',
-      res5: '',
-      res6: '',
-      otro: ''
+      res1: '0',
+      res2: '0',
+      res3: '0',
+      res4: '0',
+      res5: '0',
+      res6: '0',
+      otro: '0'
     }],
     res26: [{
       res1: '',
@@ -421,10 +421,10 @@ $scope.pase = false;
       res4: ''
     }],
     res27: [{
-      res1: '',
-      res2: '',
-      res3: '',
-      res4: ''
+      res1: '0',
+      res2: '0',
+      res3: '0',
+      res4: '0'
     }],
     res30: [{
       res1: '',
